@@ -33,4 +33,10 @@ while input("Ready to enter the Pyramid? Y/N ").upper() == "Y":
             print(option)
 
         guess = input("Pick A, B or C ").upper()
+        guesses.append(guess)
+        if guess == answers[question_num]:
+            print("CORRECT!")
+        else:
+            print("INCORRECT!")
+            print(f"{answers[question_num]} is the correct answer")
         question_num += 1
