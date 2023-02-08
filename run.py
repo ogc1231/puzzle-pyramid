@@ -1,5 +1,3 @@
-import os
-
 print("""
   _____               _        _____                           _     _ 
  |  __ \             | |      |  __ \                         (_)   | |
@@ -12,20 +10,20 @@ print("""
 """)
 
 while input("Ready to enter the Pyramid? Y/N ").upper() == "Y":
-    os.system("cls")
-
     print("Level 1")
 
     questions = (
-        "1 - What name was given to the writing system used in Ancient Egypt?",
-        "2 - What was the name of the sun god worshipped in Acient Eygpt?",
-        "3 - Which pharaoh's tomb was discovered in 1922 by Howard Carter?")
+        "What name was given to the writing system used in Ancient Egypt?",
+        "What was the name of the sun god worshipped in Acient Eygpt?",
+        "Which pharaoh's tomb was discovered in 1922 by Howard Carter?")
 
     options = (
         ("A - Hieroglyphics", "B - Cyrillic", "C - Graphemics"),
         ("A - Anubis", "B - Ra", "C - Osiris"),
         ("A - Djoser", "B - Cleopatra", "C - Tutankhamun"))
 
+    answers = ("A", "B", "C")
+    guesses = []
     question_num = 0
 
     for question in questions:
@@ -34,4 +32,5 @@ while input("Ready to enter the Pyramid? Y/N ").upper() == "Y":
         for option in options[question_num]:
             print(option)
 
+        guess = input("Pick A, B or C ").upper()
         question_num += 1
