@@ -50,4 +50,11 @@ while True:
 os.system('cls||clear')
 
 # define shop-------
-print("You weave your way down the narrow twisty alleys way of Cairo,")
+print("You weave your way down the narrow twisty alleys way of Cairo")
+print("until you find the tiny shop you were looking for, excalty the same")
+print("as the last time you were in town.\n")
+
+print("The shop was jammed full of everything any type of adventruer could")
+print("dream of; ropes, torches, chisels, hammers and bizare knick-knacks.\n")
+print("After browsing you head over to the shopkeeper at the counter.")
+print("")
