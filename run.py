@@ -10,13 +10,14 @@
 # """)
 
 while True:
-    play = input("Do wish to enter the Pyramid? ").upper()
-    if play.lower() not in ("yes", "no"):
+    play = input("Do wish to enter the Pyramid? ").lower()
+
+    if play not in ["yes", "no"]:
         print("Invalid: enter 'yes or no' ")
         continue
-    elif play == "yes":
-        print("let's go")
-        break
-    else:
+    elif play == "no":
         print("Thanks for playing, goodbye! ")
         exit()
+    else:
+        print("let's go")
+        break
