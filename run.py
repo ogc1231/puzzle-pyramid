@@ -41,10 +41,13 @@ while True:
         print("Invalid: enter 'yes or no' ")
         continue
     elif shop == "no":
-        print("You find your hotel and go straight to bed ")
-        exit()
+        print("You find your hotel and go straight to bed. ")
+        # define game-------
     else:
-        print("You head to the shop to buy some items for the morning")
+        print("You head to the shop to buy some items for the morning. ")
         break
 
 os.system('cls||clear')
+
+# define shop-------
+print("You weave your way down the narrow twisty alleys way of Cairo,")
