@@ -9,8 +9,13 @@
 #                                      |___/                             
 # """)
 
+import os
+os.system('cls||clear')
+
+player_name = input("What is your name? ").capitalize()
+
 while True:
-    play = input("Do wish to enter the Pyramid? ").lower()
+    play = input(f"Do wish to enter the Pyramid, {player_name}? ").lower()
 
     if play not in ["yes", "no"]:
         print("Invalid: enter 'yes or no' ")
@@ -21,3 +26,9 @@ while True:
     else:
         print("let's go")
         break
+
+os.system('cls||clear')
+print("You finally arrive in Cario after hours of being cramped up in a small taxi with four others,")
+print("some of which looked and smelled as if they hadn't washed in weeks.")
+print("Luckily you arrive in time to gather a few items before venturing to the Pyramid tommorrow morning")
+input("")
