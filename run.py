@@ -9,3 +9,14 @@
 #                                      |___/                             
 # """)
 
+while True:
+    play = input("Do wish to enter the Pyramid? ").upper()
+    if play.lower() not in ("yes", "no"):
+        print("Invalid: enter 'yes or no' ")
+        continue
+    elif play == "yes":
+        print("let's go")
+        break
+    else:
+        print("Thanks for playing, goodbye! ")
+        exit()
