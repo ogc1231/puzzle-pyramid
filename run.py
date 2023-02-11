@@ -58,3 +58,11 @@ print("The shop was jammed full of everything any type of adventruer could")
 print("dream of; ropes, torches, chisels, hammers and bizare knick-knacks.\n")
 print("After browsing you head over to the shopkeeper at the counter.")
 print("")
+
+# Game 0 - Answer question to open entrance doors
+
+# Game 1 - Rock, paper, scissors with MUMMY
+
+# Game 2 - Mutiple choice quiz to pass Jackal-headed guards
+
+# Game 3 - Noughts and crosses with Anubis
