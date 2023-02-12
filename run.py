@@ -82,7 +82,7 @@ while True:
         print("You have choosen the ankh! ")
         # Start game-------
 
-    break
+        break
 
 
 os.system('cls||clear')
