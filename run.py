@@ -89,7 +89,7 @@ os.system('cls||clear')
 
 
 # Start Game -----------------------------
-print("You wake up befre the sun ready for action, after gathering all your ")
+print("You wake up before the sun ready for action, after gathering all your ")
 print("you are ready to ventrure forth. You hail a taxi which brings you to ")
 print("the desert, where two men dressed in white sand robes are waiting.\n ")
 
@@ -97,11 +97,24 @@ print("You finally mount the bad-tempered camel and start the slow journey ")
 print("to the Pyramid. You arrive just after midday as the heat of the sun ")
 print("is starting to get unbearable. The guides lead to the entrance and ")
 print("one of them wishes you luck, while the other warns that most who enter")
-print("are never seen again.")
+print("are never seen again.\n ")
 
-os.system('cls||clear')
 
 # Game 0 - Answer question to open entrance doors
+print("As you approach the entrance you hear voice inside your head. To open")
+print("this door you must first answer this questions.")
+
+
+while True:
+    q1 = input("Name the mythical creature which guards these lands? ").lower()
+
+    if q1 == "sphinx":
+        print("The doors open")
+    elif q1 == "quit":
+        exit()
+    else:
+        print("Wrong guess again, type quit to exit game")
+        continue
 
 
 
