@@ -27,11 +27,13 @@ while True:
         break
 
 os.system('cls||clear')
-print("You finally arrive in Cario, after hours of being cramped up in a small")
-print("taxi with four others, some of whom looked and smelled as if they hadn't washed in weeks.\n")
+print("You finally arrive in Cario, after hours of being cramped up in a ")
+print("small taxi with four others, some of whom looked and smelled as if ")
+print("they hadn't washed in weeks.\n ")
 
-print("Luckily there was still some time to prep before venturing to the")
-print("Pyramid tomorrow morning, even though the sun was getting low in the sky.\n")
+print("Luckily there was still some time to prep before venturing to the ")
+print("Pyramid tomorrow morning, even though the sun was getting low ")
+print("in the sky.\n ")
 
 
 while True:
@@ -58,6 +60,20 @@ print("The shop was jammed full of everything any type of adventruer could")
 print("dream of; ropes, torches, chisels, hammers and bizare knick-knacks.\n")
 print("After browsing you head over to the shopkeeper at the counter.")
 print("")
+os.system('cls||clear')
+
+
+# Start Game -----------------------------
+print("You wake up befre the sun ready for action, after gathering all your ")
+print("you are ready to ventrure forth. You hail a taxi which brings you to ")
+print("the desert, where two men dressed in white sand robes are waiting.\n ")
+print("You finally mount the bad-tempered camel and start the slow journey ")
+print("to the Pyramid. You arrive just after midday as the heat of the sun ")
+print("is starting to get unbearable. The guides lead to the entrance and ")
+print("one of them wishes you luck, while the other warns that most who enter")
+print("are never seen again.")
+os.system('cls||clear')
+
 
 # Game 0 - Answer question to open entrance doors
 
