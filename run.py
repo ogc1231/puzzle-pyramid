@@ -27,6 +27,8 @@ while True:
         break
 
 os.system('cls||clear')
+
+# Intro section
 print("You finally arrive in Cario, after hours of being cramped up in a ")
 print("small taxi with four others, some of whom looked and smelled as if ")
 print("they hadn't washed in weeks.\n ")
@@ -52,14 +54,35 @@ while True:
 os.system('cls||clear')
 
 # define shop-------
-print("You weave your way down the narrow twisty alleys way of Cairo")
-print("until you find the tiny shop you were looking for, excalty the same")
+print("You weave your way down the narrow twisty alleys way of Cairo ")
+print("until you find the tiny shop you were looking for, excalty the same ")
 print("as the last time you were in town.\n")
 
-print("The shop was jammed full of everything any type of adventruer could")
-print("dream of; ropes, torches, chisels, hammers and bizare knick-knacks.\n")
-print("After browsing you head over to the shopkeeper at the counter.")
-print("")
+print("The shop was jammed full of everything any type of adventruer could ")
+print("dream of; ropes, torches, chisels, hammers and bizare knick-knacks. ")
+print("After browsing you head over to the shopkeeper at the counter.\n ")
+
+print("'So your heading to the Pyramid' says the shopkeeper. 'In that case ")
+print("only three things will be useful but can only take one. Do you want ")
+print("the rope, the torch or the ankh?'\n ")
+
+while True:
+    item_choosen = input("Choose one of the options: rope, torch or ankh? ")
+
+    if item_choosen not in ("rope", "torch", "ankh"):
+        print("Invalid: enter 'rope', 'torch' or 'ankh' ")
+        continue
+    elif item_choosen == "rope":
+        print("You have choosen the rope! ")
+        # Start game-------
+    elif item_choosen == "torch":
+        print("You have choosen the torch! ")
+        # Start game-------
+    else:
+        print("You have choosen the ankh! ")
+        # Start game-------
+
+
 os.system('cls||clear')
 
 
@@ -67,15 +90,19 @@ os.system('cls||clear')
 print("You wake up befre the sun ready for action, after gathering all your ")
 print("you are ready to ventrure forth. You hail a taxi which brings you to ")
 print("the desert, where two men dressed in white sand robes are waiting.\n ")
+
 print("You finally mount the bad-tempered camel and start the slow journey ")
 print("to the Pyramid. You arrive just after midday as the heat of the sun ")
 print("is starting to get unbearable. The guides lead to the entrance and ")
 print("one of them wishes you luck, while the other warns that most who enter")
 print("are never seen again.")
+
 os.system('cls||clear')
 
-
 # Game 0 - Answer question to open entrance doors
+
+
+
 
 # Game 1 - Rock, paper, scissors with MUMMY
 
