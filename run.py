@@ -39,7 +39,7 @@ def validate_choice(user_input, choices):
     except ValueError:
         clear()
         print(f"Invalid: {user_input} is not valid.")
-        input("Press enter to continue")
+        input("Press enter to continue ")
         return False
 
     return True
@@ -58,16 +58,20 @@ while True:
         continue
 
 while True:
-    enter_pyramid = input(f"Do wish to enter the Pyramid, {player_name}? ").lower()
+    clear()
+    start_game = input(f"Do wish to enter the Pyramid, {player_name}? [yes/no] ").lower()
+    choices = ["yes", "no"]
+    if validate_choice(start_game, choices):
+        if start_game == "yes":
+            print("You enter the Pyramid. Welcome")
+            input("pause")
+            break
+        else:
+            print("Thanks for playing. Goodbye")
+            input("pause")
+            break
+        exit_game()
 
-    if enter_pyramid not in ["yes", "no"]:
-        print("Invalid: enter 'yes or no' ")
-        continue
-    elif enter_pyramid == "no":
-        print("Thanks for playing, goodbye! ")
-        
-    else:
-        break
 
 clear()
 
