@@ -1,5 +1,6 @@
 # Imports
 import os
+import sys
 
 def clear():
 
@@ -67,10 +68,11 @@ while True:
             input("pause")
             break
         else:
-            print("Thanks for playing. Goodbye")
-            input("pause")
+            print("Thanks for playing. Goodbye!")
+            exit_game()
             break
-        exit_game()
+
+
 
 
 clear()
