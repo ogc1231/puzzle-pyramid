@@ -36,3 +36,9 @@ for quiz_question in quiz_questions:
     
     question_number += 1
 
+print("")
+print(f"Score: {quiz_score}/4")
+if quiz_score == 3:
+    print("You win!")
+else:
+    print("You lose!")
