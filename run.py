@@ -12,7 +12,7 @@
 import os
 os.system('cls||clear')
 
-player_name = input("What is your name? ").capitalize()
+player_name = input("What is your name? ").isalpha()
 
 while True:
     play = input(f"Do wish to enter the Pyramid, {player_name}? ").lower()
@@ -106,7 +106,7 @@ print("this door you must first answer this questions.")
 
 
 while True:
-    q1 = input("What creature has a human head and body a lion? ").lower()
+    q1 = input("What creature has a human head and body of a lion? ").lower()
 
     if q1 == "sphinx":
         print("The doors open")
@@ -126,6 +126,7 @@ if  item_choosen == "rope":
     print("You manage to loop the rope on the hook and pull yourself up")
     # game1()
 else:
+    # Add while true loop
     direction1 = input("Go left, right!").lower()
     if direction1 == "left":
         print("You walk down the left corrider getting a face full of acient")
@@ -137,11 +138,12 @@ else:
     else:
         print("You walk down the right corrider, it seems to clear.")
         print("You continue on coming to another junction")
+        # Add while true loop
         direction2 = input("Go left, right!").lower()
         if direction2 == "left":
             print("At the end of corrider there is a set of stairs which you")
-            print("climb, bringing up to another floor.")
-            # game1() or exit()
+            print("climb, bringing you up to another floor.")
+            # game1()
         else:
             print("You walk down the right corrider, which seems be getting")
             print("narrower and lower as you go. You eventually have to")
