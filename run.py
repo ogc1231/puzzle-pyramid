@@ -71,7 +71,7 @@ while True:
 def enter_pyramid():
 
     """
-    Function to start game or exit game
+    Function to start game or exit game.
     """
     while True:
         clear()
@@ -90,6 +90,24 @@ def enter_pyramid():
             
 enter_pyramid()
 
+def game_shop():
+    
+    """
+    Function to go to the shop in game.
+    """
+    print("You weave your way down the narrow twisty alleys way of Cairo ")
+    print("until you find the tiny shop you were looking for, excalty the same ")
+    print("as the last time you were in town.\n")
+
+    print("The shop was jammed full of everything any type of adventruer could ")
+    print("dream of; ropes, torches, chisels, hammers and bizare knick-knacks. ")
+    print("After browsing you head over to the shopkeeper at the counter.\n ")
+
+    print("'So your heading to the Pyramid' says the shopkeeper. 'In that case ")
+    print("only three things will be useful but you can only take one. Do you want ")
+    print("the rope, the torch or the ankh?'\n ")
+
+
 while True:
     shop = input("Go shopping for items? [yes/no] ").lower()
     choices = ["yes", "no"]
@@ -100,39 +118,27 @@ while True:
             break
         else:
             print("You head to the shop to buy some items for the morning. ")
-            print("pause")
+            game_shop()
             break
 
 
-print("You weave your way down the narrow twisty alleys way of Cairo ")
-print("until you find the tiny shop you were looking for, excalty the same ")
-print("as the last time you were in town.\n")
+    # while True:
+    #     ITEM = input("Choose one of the options: rope, torch or ankh? ")
 
-print("The shop was jammed full of everything any type of adventruer could ")
-print("dream of; ropes, torches, chisels, hammers and bizare knick-knacks. ")
-print("After browsing you head over to the shopkeeper at the counter.\n ")
+    #     if ITEM not in ("rope", "torch", "ankh"):
+    #         print("Invalid: enter 'rope', 'torch' or 'ankh' ")
+    #         continue
+    #     elif ITEM == "rope":
+    #         print("You have choosen the rope! ")
+    #         # Start game-------
+    #     elif ITEM == "torch":
+    #         print("You have choosen the torch! ")
+    #         # Start game-------
+    #     else:
+    #         print("You have choosen the ankh! ")
+    #         # Start game-------
 
-print("'So your heading to the Pyramid' says the shopkeeper. 'In that case ")
-print("only three things will be useful but can only take one. Do you want ")
-print("the rope, the torch or the ankh?'\n ")
-
-while True:
-    ITEM = input("Choose one of the options: rope, torch or ankh? ")
-
-    if ITEM not in ("rope", "torch", "ankh"):
-        print("Invalid: enter 'rope', 'torch' or 'ankh' ")
-        continue
-    elif ITEM == "rope":
-        print("You have choosen the rope! ")
-        # Start game-------
-    elif ITEM == "torch":
-        print("You have choosen the torch! ")
-        # Start game-------
-    else:
-        print("You have choosen the ankh! ")
-        # Start game-------
-
-        break
+    #         break
 
 
 
