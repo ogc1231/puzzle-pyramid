@@ -32,6 +32,18 @@ def title():
                                      |___/                             
     """)
 
+def validate_choice(user_input, choices):
+    try:
+        if user_input not in choices:
+            raise ValueError
+    except ValueError:
+        clear()
+        print(f"Invalid: {user_input} is not valid.")
+        input("Press enter to continue")
+        return False
+
+    return True
+
 # Variables
 ITEM = None
 
