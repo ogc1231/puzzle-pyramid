@@ -1,3 +1,12 @@
+import os
+
+def clear():
+
+    """
+    Clear function to clean-up the terminal, to increase readability.
+    """
+    os.system("cls" if os.name == "nt" else "clear")
+
 # print("""
 #   _____               _        _____                           _     _ 
 #  |  __ \             | |      |  __ \                         (_)   | |
@@ -9,8 +18,7 @@
 #                                      |___/                             
 # """)
 
-import os
-os.system('cls||clear')
+clear()
 
 player_name = input("What is your name? ").isalpha()
 
@@ -26,7 +34,7 @@ while True:
     else:
         break
 
-os.system('cls||clear')
+clear()
 
 # Intro section
 print("You finally arrive in Cario, after hours of being cramped up in a ")
@@ -51,7 +59,7 @@ while True:
         print("You head to the shop to buy some items for the morning. ")
         break
 
-os.system('cls||clear')
+clear()
 
 # define shop-------
 print("You weave your way down the narrow twisty alleys way of Cairo ")
@@ -85,7 +93,7 @@ while True:
         break
 
 
-os.system('cls||clear')
+clear()
 
 
 # Start Game -----------------------------
