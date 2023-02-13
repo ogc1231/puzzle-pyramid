@@ -106,7 +106,7 @@ print("this door you must first answer this questions.")
 
 
 while True:
-    q1 = input("Name the mythical creature which guards these lands? ").lower()
+    q1 = input("What creature has a human head  and body a lion? ").lower()
 
     if q1 == "sphinx":
         print("The doors open")
