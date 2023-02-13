@@ -1,3 +1,4 @@
+# Imports
 import os
 
 def clear():
@@ -7,12 +8,14 @@ def clear():
     """
     os.system("cls" if os.name == "nt" else "clear")
 
+# Functions
 def exit_game():
 
     """
     Function exit game fully and not just current loop.
     """
     sys.exit()
+
 
 def title():
     """
@@ -29,13 +32,14 @@ def title():
                                      |___/                             
     """)
 
-ITEM = None  
+# Variables
+ITEM = None
 
 title()
 
 while True:
-    player_name = input("What is your name? ").isalpha()
-    if player_name == True:
+    player_name = input("What is your name? ").capitalize()
+    if player_name.isalpha():
         break
     else:
         print("Invalid: Enter a name containing letters only! ")
