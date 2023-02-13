@@ -7,6 +7,13 @@ def clear():
     """
     os.system("cls" if os.name == "nt" else "clear")
 
+def exit_game():
+
+    """
+    Function exit game fully and not just current loop.
+    """
+    sys.exit()
+
 def title():
     """
      Prints Puzzle Pyramid ASCII text.
@@ -35,14 +42,14 @@ while True:
         continue
 
 while True:
-    play = input(f"Do wish to enter the Pyramid, {player_name}? ").lower()
+    enter_pyramid = input(f"Do wish to enter the Pyramid, {player_name}? ").lower()
 
-    if play not in ["yes", "no"]:
+    if enter_pyramid not in ["yes", "no"]:
         print("Invalid: enter 'yes or no' ")
         continue
-    elif play == "no":
+    elif enter_pyramid == "no":
         print("Thanks for playing, goodbye! ")
-        exit()
+        
     else:
         break
 
