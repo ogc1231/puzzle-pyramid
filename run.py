@@ -91,7 +91,7 @@ def enter_pyramid():
 enter_pyramid()
 
 def game_shop():
-    
+
     """
     Function to go to the shop in game.
     """
@@ -107,17 +107,35 @@ def game_shop():
     print("only three things will be useful but you can only take one. Do you want ")
     print("the rope, the torch or the ankh?'\n ")
 
+def game_main():
+
+    """
+    Function to start main game.
+    """
+    
+    print("You wake up before the sun ready for action, after gathering all your ")
+    print("you are ready to ventrure forth. You hail a taxi which brings you to ")
+    print("the desert, where two men dressed in white sand robes are waiting.\n ")
+
+    print("You finally mount the bad-tempered camel and start the slow journey ")
+    print("to the Pyramid. You arrive just after midday as the heat of the sun ")
+    print("is starting to get unbearable. The guides lead to the entrance and ")
+    print("one of them wishes you luck, while the other warns that most who enter")
+    print("are never seen again.\n ")
+
 
 while True:
     shop = input("Go shopping for items? [yes/no] ").lower()
     choices = ["yes", "no"]
     if validate_choice(shop, choices):
         if shop == "no":
-            print("You find your hotel and go straight to bed. ")
-            # define game-------
+            clear()
+            print("You find your hotel and go straight to bed.\n ")
+            game_main()
             break
         else:
-            print("You head to the shop to buy some items for the morning. ")
+            clear()
+            print("You head to the shop to buy some items for the morning.\n ")
             game_shop()
             break
 
@@ -143,16 +161,7 @@ while True:
 
 
 
-# # game_main -----------------------------
-# print("You wake up before the sun ready for action, after gathering all your ")
-# print("you are ready to ventrure forth. You hail a taxi which brings you to ")
-# print("the desert, where two men dressed in white sand robes are waiting.\n ")
 
-# print("You finally mount the bad-tempered camel and start the slow journey ")
-# print("to the Pyramid. You arrive just after midday as the heat of the sun ")
-# print("is starting to get unbearable. The guides lead to the entrance and ")
-# print("one of them wishes you luck, while the other warns that most who enter")
-# print("are never seen again.\n ")
 
 
 # # Game 0 - Answer question to open entrance doors
