@@ -144,23 +144,34 @@ def shopping():
 shopping()
 
 def ITEM_choice():
+
+    """
+    Function to choose ITEM from shop.
+    """
     while True:
         ITEM = input("Choose one of the options: rope, torch or ankh? ")
+        choices = ["rope", "torch", "ankh"]
+        if validate_choice(ITEM, choices):
+            if ITEM == "rope":
+                clear()
+                print("You have chosen the rope!\n ")
+                print("After shopping you find your way back to the hotel.\n ")
+                game_main()
+                break
+            elif ITEM == "torch":
+                clear()
+                print("You have chosen the torch!\n ")
+                print("After shopping you find your way back to the hotel.\n ")
+                game_main()
+                break
+            else:
+                clear()
+                print("You have chosen the ankh!\n ")
+                print("After shopping you find your way back to the hotel.\n ")
+                game_main()
+                break
 
-        if ITEM not in ("rope", "torch", "ankh"):
-            print("Invalid: enter 'rope', 'torch' or 'ankh' ")
-            continue
-        elif ITEM == "rope":
-            print("You have choosen the rope! ")
-            # Start game-------
-        elif ITEM == "torch":
-            print("You have choosen the torch! ")
-            # Start game-------
-        else:
-            print("You have choosen the ankh! ")
-            # Start game-------
-
-            break
+ITEM_choice()
 
 
 
