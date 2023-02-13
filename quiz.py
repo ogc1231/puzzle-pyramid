@@ -14,3 +14,7 @@ quiz_options = (
 )
 
 quiz_answers = ("C", "A", "B", "C", "B")
+
+for quiz_question in quiz_questions:
+    print("")
+    print(quiz_question)
