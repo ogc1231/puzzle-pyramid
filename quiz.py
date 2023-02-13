@@ -12,3 +12,5 @@ quiz_options = (
     ("A - Osiris", "B - Isis", "C - Ra"),
     ("A - Stag", "B - Scarabs", "C - Hercules")
 )
+
+quiz_answers = ("C", "A", "B", "C", "B")
