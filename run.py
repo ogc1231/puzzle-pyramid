@@ -91,56 +91,53 @@ def enter_pyramid():
 enter_pyramid()
 
 while True:
-    shop = input("Go shopping for items? ")
+    shop = input("Go shopping for items? [yes/no] ").lower()
+    choices = ["yes", "no"]
+    if validate_choice(shop, choices):
+        if shop == "no":
+            print("You find your hotel and go straight to bed. ")
+            # define game-------
+            break
+        else:
+            print("You head to the shop to buy some items for the morning. ")
+            print("pause")
+            break
 
-    if shop not in ["yes", "no"]:
-        print("Invalid: enter 'yes or no' ")
+
+print("You weave your way down the narrow twisty alleys way of Cairo ")
+print("until you find the tiny shop you were looking for, excalty the same ")
+print("as the last time you were in town.\n")
+
+print("The shop was jammed full of everything any type of adventruer could ")
+print("dream of; ropes, torches, chisels, hammers and bizare knick-knacks. ")
+print("After browsing you head over to the shopkeeper at the counter.\n ")
+
+print("'So your heading to the Pyramid' says the shopkeeper. 'In that case ")
+print("only three things will be useful but can only take one. Do you want ")
+print("the rope, the torch or the ankh?'\n ")
+
+while True:
+    ITEM = input("Choose one of the options: rope, torch or ankh? ")
+
+    if ITEM not in ("rope", "torch", "ankh"):
+        print("Invalid: enter 'rope', 'torch' or 'ankh' ")
         continue
-    elif shop == "no":
-        print("You find your hotel and go straight to bed. ")
-        # define game-------
+    elif ITEM == "rope":
+        print("You have choosen the rope! ")
+        # Start game-------
+    elif ITEM == "torch":
+        print("You have choosen the torch! ")
+        # Start game-------
     else:
-        print("You head to the shop to buy some items for the morning. ")
+        print("You have choosen the ankh! ")
+        # Start game-------
+
         break
 
-clear()
-
-# # define shop-------
-# print("You weave your way down the narrow twisty alleys way of Cairo ")
-# print("until you find the tiny shop you were looking for, excalty the same ")
-# print("as the last time you were in town.\n")
-
-# print("The shop was jammed full of everything any type of adventruer could ")
-# print("dream of; ropes, torches, chisels, hammers and bizare knick-knacks. ")
-# print("After browsing you head over to the shopkeeper at the counter.\n ")
-
-# print("'So your heading to the Pyramid' says the shopkeeper. 'In that case ")
-# print("only three things will be useful but can only take one. Do you want ")
-# print("the rope, the torch or the ankh?'\n ")
-
-# while True:
-#     ITEM = input("Choose one of the options: rope, torch or ankh? ")
-
-#     if ITEM not in ("rope", "torch", "ankh"):
-#         print("Invalid: enter 'rope', 'torch' or 'ankh' ")
-#         continue
-#     elif ITEM == "rope":
-#         print("You have choosen the rope! ")
-#         # Start game-------
-#     elif ITEM == "torch":
-#         print("You have choosen the torch! ")
-#         # Start game-------
-#     else:
-#         print("You have choosen the ankh! ")
-#         # Start game-------
-
-#         break
 
 
-# clear()
 
-
-# # Start Game -----------------------------
+# # game_main -----------------------------
 # print("You wake up before the sun ready for action, after gathering all your ")
 # print("you are ready to ventrure forth. You hail a taxi which brings you to ")
 # print("the desert, where two men dressed in white sand robes are waiting.\n ")
