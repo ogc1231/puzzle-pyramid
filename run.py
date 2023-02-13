@@ -22,7 +22,7 @@ def title():
                                          |___/                             
     """)
 
-ITEM = None
+ITEM = None  
 
 title()
 
@@ -81,15 +81,15 @@ print("only three things will be useful but can only take one. Do you want ")
 print("the rope, the torch or the ankh?'\n ")
 
 while True:
-    item_choosen = input("Choose one of the options: rope, torch or ankh? ")
+    ITEM = input("Choose one of the options: rope, torch or ankh? ")
 
-    if item_choosen not in ("rope", "torch", "ankh"):
+    if ITEM not in ("rope", "torch", "ankh"):
         print("Invalid: enter 'rope', 'torch' or 'ankh' ")
         continue
-    elif item_choosen == "rope":
+    elif ITEM == "rope":
         print("You have choosen the rope! ")
         # Start game-------
-    elif item_choosen == "torch":
+    elif ITEM == "torch":
         print("You have choosen the torch! ")
         # Start game-------
     else:
