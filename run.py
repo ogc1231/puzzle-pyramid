@@ -112,7 +112,6 @@ def game_main():
     """
     Function to start main game.
     """
-    
     print("You wake up before the sun ready for action, after gathering all your ")
     print("you are ready to ventrure forth. You hail a taxi which brings you to ")
     print("the desert, where two men dressed in white sand robes are waiting.\n ")
@@ -123,40 +122,45 @@ def game_main():
     print("one of them wishes you luck, while the other warns that most who enter")
     print("are never seen again.\n ")
 
+def shopping():
 
-while True:
-    shop = input("Go shopping for items? [yes/no] ").lower()
-    choices = ["yes", "no"]
-    if validate_choice(shop, choices):
-        if shop == "no":
-            clear()
-            print("You find your hotel and go straight to bed.\n ")
-            game_main()
-            break
+    """
+    Function to choose to go shopping or not.
+    """
+    while True:
+        shop = input("Go shopping for items? [yes/no] ").lower()
+        choices = ["yes", "no"]
+        if validate_choice(shop, choices):
+            if shop == "no":
+                clear()
+                print("You find your hotel and go straight to bed.\n ")
+                game_main()
+                break
+            else:
+                clear()
+                print("You head to the shop to buy some items for the morning.\n ")
+                game_shop()
+                break
+shopping()
+
+def ITEM_choice():
+    while True:
+        ITEM = input("Choose one of the options: rope, torch or ankh? ")
+
+        if ITEM not in ("rope", "torch", "ankh"):
+            print("Invalid: enter 'rope', 'torch' or 'ankh' ")
+            continue
+        elif ITEM == "rope":
+            print("You have choosen the rope! ")
+            # Start game-------
+        elif ITEM == "torch":
+            print("You have choosen the torch! ")
+            # Start game-------
         else:
-            clear()
-            print("You head to the shop to buy some items for the morning.\n ")
-            game_shop()
+            print("You have choosen the ankh! ")
+            # Start game-------
+
             break
-
-
-    # while True:
-    #     ITEM = input("Choose one of the options: rope, torch or ankh? ")
-
-    #     if ITEM not in ("rope", "torch", "ankh"):
-    #         print("Invalid: enter 'rope', 'torch' or 'ankh' ")
-    #         continue
-    #     elif ITEM == "rope":
-    #         print("You have choosen the rope! ")
-    #         # Start game-------
-    #     elif ITEM == "torch":
-    #         print("You have choosen the torch! ")
-    #         # Start game-------
-    #     else:
-    #         print("You have choosen the ankh! ")
-    #         # Start game-------
-
-    #         break
 
 
 
