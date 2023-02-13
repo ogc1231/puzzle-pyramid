@@ -14,6 +14,9 @@ quiz_options = (
 
 quiz_answers = ("C", "A", "B", "C", "B")
 
+quiz_guesses = []
+quiz_score = 0
+
 question_number = 0
 
 for quiz_question in quiz_questions:
