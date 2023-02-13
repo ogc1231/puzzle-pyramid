@@ -2,6 +2,10 @@
 import os
 import sys
 
+# Variables
+ITEM = None
+
+# Functions
 def clear():
 
     """
@@ -9,13 +13,24 @@ def clear():
     """
     os.system("cls" if os.name == "nt" else "clear")
 
-# Functions
 def exit_game():
 
     """
     Function exit game fully and not just current loop.
     """
     sys.exit()
+
+def validate_choice(user_input, choices):
+    try:
+        if user_input not in choices:
+            raise ValueError
+    except ValueError:
+        clear()
+        print(f"Invalid: {user_input} is not valid.")
+        input("Press enter to continue ")
+        return False
+
+    return True
 
 
 def title():
@@ -33,20 +48,15 @@ def title():
                                      |___/                             
     """)
 
-def validate_choice(user_input, choices):
-    try:
-        if user_input not in choices:
-            raise ValueError
-    except ValueError:
-        clear()
-        print(f"Invalid: {user_input} is not valid.")
-        input("Press enter to continue ")
-        return False
 
-    return True
+# Game intro text
+def game_intro():
+    print("You finally arrive in Cario, after hours of being cramped up in a ")
+    print("small taxi with four others, some of whom looked and smelled as if ")
+    print("they hadn't washed in weeks.\n ")
 
-# Variables
-ITEM = None
+    print("Luckily there was still some time to prep before venturing to the ")
+    print("Pyramid tomorrow morning.\n ")
 
 title()
 
@@ -58,34 +68,27 @@ while True:
         print("Invalid: Enter a name containing letters only! ")
         continue
 
-while True:
-    clear()
-    start_game = input(f"Do wish to enter the Pyramid, {player_name}? [yes/no] ").lower()
-    choices = ["yes", "no"]
-    if validate_choice(start_game, choices):
-        if start_game == "yes":
-            print("You enter the Pyramid. Welcome")
-            input("pause")
-            break
-        else:
-            print("Thanks for playing. Goodbye!")
-            exit_game()
-            break
+def enter_pyramid():
 
-
-
-
-clear()
-
-# Intro section
-print("You finally arrive in Cario, after hours of being cramped up in a ")
-print("small taxi with four others, some of whom looked and smelled as if ")
-print("they hadn't washed in weeks.\n ")
-
-print("Luckily there was still some time to prep before venturing to the ")
-print("Pyramid tomorrow morning, even though the sun was getting low ")
-print("in the sky.\n ")
-
+    """
+    Function to start game or exit game
+    """
+    while True:
+        clear()
+        start_game = input(f"Do wish to enter the Pyramid, {player_name}? [yes/no] ").lower()
+        choices = ["yes", "no"]
+        if validate_choice(start_game, choices):
+            if start_game == "yes":
+                clear()
+                game_intro()
+                
+                break
+            else:
+                print("Thanks for playing. Goodbye!")
+                exit_game()
+                break
+            
+enter_pyramid()
 
 while True:
     shop = input("Go shopping for items? ")
