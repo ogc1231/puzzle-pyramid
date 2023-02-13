@@ -25,5 +25,14 @@ for quiz_question in quiz_questions:
     for quiz_option in quiz_options[question_number]:
         print(quiz_option)
 
+    quiz_guess = input("Enter 'A', 'B' or 'C' ").upper()
+    quiz_guesses.append(quiz_guess)
+    if quiz_guess == quiz_answers[question_number]:
+        quiz_score += 1
+        print("Correct Answer!")
+    else:
+        print("Incorrect Answer!")
+    
+
     question_number += 1
 
