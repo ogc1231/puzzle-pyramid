@@ -106,7 +106,7 @@ print("this door you must first answer this questions.")
 
 
 while True:
-    q1 = input("What creature has a human head  and body a lion? ").lower()
+    q1 = input("What creature has a human head and body a lion? ").lower()
 
     if q1 == "sphinx":
         print("The doors open")
@@ -115,6 +115,44 @@ while True:
     else:
         print("Wrong guess again, type quit to exit game")
         continue
+
+print("The doors open with a low rumble, throwning red dust into the air.")
+print("You hesitantly walk ing, letting your eye adjust to the gloomy ")
+print("light inside. You come to a juction with a path lead left and")
+print("another leading to the right. There is also a high ledge with")
+print("a hook above it, maybe some sort of tool would be useful here?")
+
+if  item_choosen == "rope":
+    print("You manage to loop the rope on the hook and pull yourself up")
+    # game1()
+else:
+    direction1 = input("Go left, right!").lower()
+    if direction1 == "left":
+        print("You walk down the left corrider getting a face full of acient")
+        print("cobwebs. After wiping your face you see human bones and skulls")
+        print("You reluctantly move forward, you put down your foot and hear")
+        print("a soft click. Bolts shoot out from the both sides.")
+        print("You died!")
+        # restart()
+    else:
+        print("You walk down the right corrider, it seems to clear.")
+        print("You continue on coming to another junction")
+        direction2 = input("Go left, right!").lower()
+        if direction2 == "left":
+            print("At the end of corrider there is a set of stairs which you")
+            print("climb, bringing up to another floor.")
+            # game1()
+        else:
+            print("You walk down the right corrider, which seems be getting")
+            print("narrower and lower as you go. You eventually have to")
+            print("continue on your hands and knee and then crawling on your")
+            print("stomach. You see light on the end of the tunnel and press")
+            print("on, however after a few minutes you realise you are stuck")
+            print("just a few metres away from the exit. No amount of")
+            print("seems to help. You start to scream for help but no one can")
+            print("hear you!")
+            print("You died!")
+            # restart()
 
 
 
