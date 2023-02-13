@@ -141,7 +141,7 @@ else:
         if direction2 == "left":
             print("At the end of corrider there is a set of stairs which you")
             print("climb, bringing up to another floor.")
-            # game1()
+            # game1() or exit()
         else:
             print("You walk down the right corrider, which seems be getting")
             print("narrower and lower as you go. You eventually have to")
@@ -152,7 +152,7 @@ else:
             print("seems to help. You start to scream for help but no one can")
             print("hear you!")
             print("You died!")
-            # restart()
+            # restart() or exit()
 
 
 
