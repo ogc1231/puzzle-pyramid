@@ -154,52 +154,50 @@ def ITEM_choice():
         if validate_choice(ITEM, choices):
             if ITEM == "rope":
                 clear()
-                print("You have chosen the rope!\n ")
+                print(f"You have chosen the {ITEM}!\n ")
                 print("After shopping you find your way back to the hotel.\n ")
                 game_main()
                 break
             elif ITEM == "torch":
                 clear()
-                print("You have chosen the torch!\n ")
+                print(f"You have chosen the {ITEM}!\n ")
                 print("After shopping you find your way back to the hotel.\n ")
                 game_main()
                 break
             else:
                 clear()
-                print("You have chosen the ankh!\n ")
+                print(f"You have chosen the {ITEM}!\n ")
                 print("After shopping you find your way back to the hotel.\n ")
                 game_main()
                 break
 
 ITEM_choice()
 
+def entrance_open():
+    clear()
+    print("The doors open with a low rumble, throwning red dust into the air.")
+    print("You hesitantly walk ing, letting your eye adjust to the gloomy ")
+    print("light inside. You come to a juction with a path lead left and")
+    print("another leading to the right. There is also a high ledge with")
+    print("a hook above it, maybe some sort of tool would be useful here?")
 
 
+def game_0():
+    print("As you approach the entrance you hear voice inside your head. To open")
+    print("this door you must first answer this questions.\n ")
 
 
+    while True:
+        entrance_q = input("What creature has a human head and body of a lion? ").lower()
+        choices = ["sphinx"]
+        if validate_choice(entrance_q, choices):
+            if entrance_q == "sphinx":
+                clear()
+                entrance_open()
+                break
 
+game_0()
 
-# # Game 0 - Answer question to open entrance doors
-# print("As you approach the entrance you hear voice inside your head. To open")
-# print("this door you must first answer this questions.")
-
-
-# while True:
-#     q1 = input("What creature has a human head and body of a lion? ").lower()
-
-#     if q1 == "sphinx":
-#         print("The doors open")
-#     elif q1 == "quit":
-#         exit()
-#     else:
-#         print("Wrong guess again, type quit to exit game")
-#         continue
-
-# print("The doors open with a low rumble, throwning red dust into the air.")
-# print("You hesitantly walk ing, letting your eye adjust to the gloomy ")
-# print("light inside. You come to a juction with a path lead left and")
-# print("another leading to the right. There is also a high ledge with")
-# print("a hook above it, maybe some sort of tool would be useful here?")
 
 # if  item_choosen == "rope":
 #     print("You manage to loop the rope on the hook and pull yourself up")
