@@ -234,11 +234,11 @@ def game_1():
         print(f"The Mummy chose {mummy_hand}!")
 
         if player_hand == mummy_hand:
-            print("It's a tie!")
+            print("It's a tie, again human!")
         elif player_hand == "rock" and mummy_hand == "scissors":
             print("You win!")
             player_wins += 1
-            print("Mummy: Your better than you look!")
+            print("Mummy: You're better than you look!")
         elif player_hand == "scissors" and mummy_hand == "paper":
             print("You win!")
             player_wins += 1
@@ -253,7 +253,7 @@ def game_1():
 
     if mummy_wins == 3:
         print("Unfortunately the mummy beat you. Game Over!")
-        sys.exit()
+        entrance_open()
     elif player_wins == 3:
         print("proceed to next room/game")
 
