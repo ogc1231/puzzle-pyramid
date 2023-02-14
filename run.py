@@ -224,7 +224,7 @@ def level_1():
                 print("You reluctantly move forward, you put down your foot and hear")
                 print("a soft click. Bolts shoot out from the both sides.")
                 print("You died!")
-                # restart()
+                entrance_open()
                 break
             else:
                 print("You walk down the right corrider, it seems to clear.")
@@ -248,7 +248,7 @@ def level_1():
                             print("seems to help. You start to scream for help but no one can")
                             print("hear you!")
                             print("You died!")
-                            # restart()
+                            entrance_open()
                             break
 
 level_1()
