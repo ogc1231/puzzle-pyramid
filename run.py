@@ -1,6 +1,7 @@
 # Imports
 import os
 import sys
+import random
 
 # Variables
 ITEM = None
@@ -205,6 +206,57 @@ def game_0():
 
 game_0()
 
+
+def game_1():
+
+    """
+    Function to run first game: rock, paper, scissors.
+    """
+    print("You enter a lower chamber with a low ceiling. At the sound of your")
+    print("footsteps a MUMMY turns arounding grinning it's rotten teeth at you ")
+    print("MUMMY: Ah another victim, good as I was getting hungry. I will")
+    print("however give you a chance, beat me at my favoutite game and")
+    print("will let you live, but if you lose you will never leave this room.")
+    print("READY!")
+
+    hand = ("rock", "paper", "scissors")
+    player_wins = 0
+    mummy_wins = 0
+
+    while mummy_wins < 3 and player_wins < 3:
+        player_hand = None
+        mummy_hand = random.choice(hand)
+
+        while player_hand not in hand:
+            player_hand = input("Choose a hand (rock, paper or scissors): ").lower()
+
+        print(f"You chose {player_hand}! ")
+        print(f"The Mummy chose {mummy_hand}!")
+
+        if player_hand == mummy_hand:
+            print("It's a tie!")
+        elif player_hand == "rock" and mummy_hand == "scissors":
+            print("You win!")
+            player_wins += 1
+            print("Mummy: Your better than you look!")
+        elif player_hand == "scissors" and mummy_hand == "paper":
+            print("You win!")
+            player_wins += 1
+            print("Mummy: Arrhh, not possible")
+        elif player_hand == "paper" and mummy_hand == "rock":
+            print("You win!")
+            player_wins += 1
+            print("Mummy: How did you beat me!")
+        else:
+            print("Mummy: Bahahaha! I won that round. Let's try another.")
+            mummy_wins += 1
+
+    if mummy_wins == 3:
+        print("Unfortunately the mummy beat you. Game Over!")
+        sys.exit()
+    elif player_wins == 3:
+        print("proceed to next room/game")
+
 def level_1():
 
     """
@@ -216,7 +268,7 @@ def level_1():
         if validate_choice(direction1, choices):
             if  ITEM == "rope":
                 print("You mange to loop the rope around the hook and pull yourself up! ")
-                # game1()
+                game_1()
                 break
             elif direction1 == "left":
                 print("You walk down the left corrider getting a face full of acient")
@@ -230,13 +282,13 @@ def level_1():
                 print("You walk down the right corrider, it seems to clear.")
                 print("You continue on coming to another junction")
                 while True:
-                    direction2 = input("Go left, right! [left/right]").lower()
+                    direction2 = input("Go left, right! [left/right] ").lower()
                     choices = ["left", "right"]
                     if validate_choice(direction2, choices):
                         if direction2 == "left":
                             print("At the end of corrider there is a set of stairs which you")
-                            print("climb, bringing you up to the next floor.")
-                            # game1()
+                            print("climb, bringing you up to the next floor.\n ")
+                            game_1()
                             break
                         else:
                             print("You walk down the right corrider, which seems be getting")
@@ -252,6 +304,13 @@ def level_1():
                             break
 
 level_1()
+
+
+
+
+
+
+
 
 
 
