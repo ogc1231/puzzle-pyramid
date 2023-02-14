@@ -217,7 +217,7 @@ def game_1():
     print("MUMMY: Ah another victim, good as I was getting hungry. I will")
     print("however give you a chance, beat me at my favoutite game and")
     print("will let you live, but if you lose you will never leave this room.")
-    print("READY!")
+    print("READY!\n ")
 
     hand = ("rock", "paper", "scissors")
     player_wins = 0
