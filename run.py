@@ -144,7 +144,7 @@ def shopping():
                 break
 shopping()
 
-def ITEM_choice():
+def item_choice():
 
     """
     Function to choose ITEM from shop.
@@ -172,7 +172,7 @@ def ITEM_choice():
                 game_main()
                 break
 
-ITEM_choice()
+item_choice()
 
 def entrance_open():
 
