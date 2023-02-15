@@ -5,6 +5,7 @@ import random
 
 # Variables
 ITEM = None
+PLAYER = None
 
 # Functions
 def clear():
