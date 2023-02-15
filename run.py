@@ -60,16 +60,22 @@ def game_intro():
     print("Luckily there was still some time to prep before venturing to the ")
     print("Pyramid tomorrow morning.\n ")
 
-title()
+    shopping()
 
-global PLAYER
-while True:
-    PLAYER = input("What is your name? ").capitalize()
-    if PLAYER.isalpha():
-        break
-    else:
-        print("Invalid: Enter a name containing letters only! ")
-        continue
+def player_name():
+    
+    """
+    Function input player's name.
+    """
+
+    global PLAYER
+    while True:
+        PLAYER = input("What is your name? ").capitalize()
+        if PLAYER.isalpha() and len(PLAYER) >= 2:
+            break
+        else:
+            print("Invalid: Enter a name containing letters only! ")
+            continue
 
 def enter_pyramid():
 
