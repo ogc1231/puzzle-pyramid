@@ -142,16 +142,16 @@ def shopping():
         shop = input("Go shopping for items? [yes/no] ").lower()
         choices = ["yes", "no"]
         if validate_choice(shop, choices):
-            if shop == "no":
-                clear()
-                print("You find your hotel and go straight to bed.\n ")
-                game_main()
-                break
-            else:
-                clear()
-                print("You head to the shop to buy some items for the morning.\n ")
-                game_shop()
-                break
+            break
+
+    if shop == "no":
+        clear()
+        print("You find your hotel and go straight to bed.\n ")
+        game_main()
+    else:
+        clear()
+        print("You head to the shop to buy some items for the morning.\n ")
+        game_shop()
 
 def item_choice():
 
