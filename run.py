@@ -53,11 +53,11 @@ def title():
 
 # Game intro text
 def game_intro():
-    print("You finally arrive in Cario, after hours of being cramped up in a ")
-    print("small taxi with four others, some of whom looked and smelled as if ")
+    print("You finally arrive in Cairo, after hours of being cramped up in a")
+    print("small taxi with four others, some of whom looked and smelled as if")
     print("they hadn't washed in weeks.\n ")
 
-    print("Luckily there was still some time to prep before venturing to the ")
+    print("Luckily there was still some time to prep before venturing to the")
     print("Pyramid tomorrow morning.\n ")
 
     shopping()
