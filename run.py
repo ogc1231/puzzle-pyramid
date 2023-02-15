@@ -7,6 +7,7 @@ import random
 ITEM = None
 PLAYER = None
 
+
 # Functions
 def clear():
 
@@ -15,12 +16,14 @@ def clear():
     """
     os.system("cls" if os.name == "nt" else "clear")
 
+
 def exit_game():
 
     """
     Function exit game fully and not just current loop.
     """
     sys.exit()
+
 
 def validate_choice(user_input, choices):
     try:
@@ -48,7 +51,7 @@ def title():
 |_|    \__,_/___/___|_|\___| |_|    \__, |_|  \__,_|_| |_| |_|_|\__,_|
                                      __/ |                            
                                      |___/                             
-    """) # noqa
+    """)  # noqa
 
 
 # Game intro text
@@ -67,8 +70,9 @@ def game_intro():
 
     shopping()
 
+
 def player_name():
-    
+
     """
     Function input player's name.
     """
@@ -83,6 +87,7 @@ def player_name():
             title()
             print("Invalid: Enter a name containing at least 2 letters!")
             continue
+
 
 def enter_pyramid():
 
@@ -106,16 +111,23 @@ def enter_pyramid():
                 exit_game()
                 break
 
-def game_shop():
+
+def game_shop():----------------
 
     """
     Function to go to the shop in game.
     """
     print("You weave your way down the narrow twisty alleys way of Cairo ")
-    print("until you find the tiny shop you were looking for, excalty the same ")
+    print(
+        "until you find the tiny shop you were looking for, "
+        "exactly the same "
+    )
     print("as the last time you were in town.\n")
 
-    print("The shop was jammed full of everything any type of adventruer could ")
+    print(
+        "The shop was jammed full of everything any "
+        "type of adventurer could "
+    )
     print("dream of; ropes, torches, chisels, hammers and bizare knick-knacks. ")
     print("After browsing you head over to the shopkeeper at the counter.\n ")
 
@@ -124,6 +136,7 @@ def game_shop():
     print("the rope, the torch or the ankh?'\n ")
 
     item_choice()
+
 
 def game_main():
 
@@ -141,6 +154,7 @@ def game_main():
     print("are never seen again.\n ")
 
     game_0()
+
 
 def shopping():
 
@@ -161,6 +175,7 @@ def shopping():
         clear()
         print("You head to the shop to buy some items for the morning.\n ")
         game_shop()
+
 
 def item_choice():
 
@@ -190,6 +205,7 @@ def item_choice():
                 print("After shopping you find your way back to the hotel.\n ")
                 game_main()
                 break
+
 
 def level_1():
     """
@@ -246,6 +262,7 @@ def level_1():
             print("\nYou died!")
             exit_game()
 
+
 def entrance_open():
 
     """
@@ -277,6 +294,7 @@ def game_0():
             clear()
             entrance_open()
             break
+
 
 def game_1():
 
@@ -344,16 +362,6 @@ if __name__ == "__main__":
     title()
     player_name()
     enter_pyramid()
-
-
-
-
-
-
-
-
-
-
 
 # Game 1 - Rock, paper, scissors with MUMMY
 
