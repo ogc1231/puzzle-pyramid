@@ -266,7 +266,7 @@ def level_1():
     if ITEM is not None and ITEM == "rope":
         clear()
         print(
-            "You mange to loop the rope around the hook and pull yourself"
+            "You mange to loop the rope around the hook and pull yourself "
             "up!\n"
         )
         game_1()
