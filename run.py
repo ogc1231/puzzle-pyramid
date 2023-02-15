@@ -309,7 +309,11 @@ def game_1():
         print("proceed to next room/game")
 
 
-
+if __name__ == "__main__":
+    clear()
+    title()
+    player_name()
+    enter_pyramid()
 
 
 
