@@ -206,16 +206,10 @@ def item_choice():
     """
     global ITEM
     while True:
-        ITEM = input("Choose one of the options: rope, torch or ankh? ")
-        choices = ["rope", "torch", "ankh"]
+        ITEM = input("Choose one of the options: rope or torch ")
+        choices = ["rope", "torch"]
         if validate_choice(ITEM, choices):
             if ITEM == "rope":
-                clear()
-                print(f"You have chosen the {ITEM}!\n ")
-                print("After shopping you find your way back to the hotel.\n ")
-                game_main()
-                break
-            elif ITEM == "torch":
                 clear()
                 print(f"You have chosen the {ITEM}!\n ")
                 print("After shopping you find your way back to the hotel.\n ")
@@ -328,6 +322,70 @@ def game_0():
             break
 
 
+def door_open():
+
+    """
+    Function to call door_open after correctly answering second question.
+    """
+    global ITEM
+    clear()
+    print(
+        "The doors open again with a low rumble, however the passage ahead "
+        "is completely dark.\n"
+    )
+    while True:
+        if ITEM is not None and ITEM == "torch":
+            direction3 = input(
+                "Use torch [torch] "
+            ).lower()
+            choices = ["torch"]
+        else:
+            direction3 = input("Enter the passage [enter] ").lower()
+            choices = ["enter"]
+        if validate_choice(direction3, choices):
+            break
+
+    if ITEM is not None and ITEM == "torch":
+        clear()
+        print(
+            "You turn on your torch revealing a passage full of pitfall traps "
+            "and side passages.\n"
+        )
+        print("Thanks for playing!")
+        exit_game()
+    else:
+        clear()
+        print(
+            "You walk blindly into the darkness without knowing what "
+            "awaits you.\n"
+        )
+        print("Thanks for playing!")
+        exit_game()
+
+
+def level_2():
+
+    """
+    Function to call level_2 after beating the Mummy.
+    """
+    clear()
+    print("Mummy: Well done human you may proceed.\n ")
+    print(
+        "You slowly walk to the door at the far end of the chamber "
+        "keeping a close eye on the Mummy."
+    )
+    print("As you approach the door you hear voice again.\n ")
+    while True:
+        door_q = input(
+            "Who is known the Egyptian Sun God? "
+        ).lower()
+        choices = ["ra"]
+        if validate_choice(door_q, choices):
+            clear()
+            door_open()
+            break
+
+
 def game_1():
 
     """
@@ -346,7 +404,7 @@ def game_1():
 
     while mummy_wins < 3 and player_wins < 3:
         player_hand = None
-        mummy_hand = random.choice(hand)
+        mummy_hand = "rock"
 
         print(f"Your Score: {player_wins}")
         print(f"Mummy Score: {mummy_wins}")
@@ -388,7 +446,9 @@ def game_1():
         clear()
         print(f"Your Score: {player_wins}")
         print(f"Mummy Score: {mummy_wins}")
-        input("You defeated the mummy!")
+        print("You defeated the mummy!\n")
+
+        level_2()
 
 
 if __name__ == "__main__":
