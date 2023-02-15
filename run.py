@@ -62,7 +62,6 @@ def game_intro():
     """
     Function to call game intro text.
     """
-    
     print("You finally arrive in Cairo, after hours of being cramped up in a")
     print("small taxi with four others, some of whom looked and smelled as if")
     print("they hadn't washed in weeks.\n ")
@@ -130,12 +129,19 @@ def game_shop():
         "The shop was jammed full of everything any "
         "type of adventurer could "
     )
-    print("dream of; ropes, torches, chisels, hammers and bizarre knick-knacks. ")
+    print(
+        "dream of; ropes, torches, chisels, "
+        "hammers and bizarre knick-knacks. "
+    )
     print("After browsing you head over to the shopkeeper at the counter.\n ")
 
-    print("'So your heading to the Pyramid' says the shopkeeper. 'In that case ")
-    print("only three things will be useful but you can only take one. Do you want ")
-    print("the rope, the torch or the ankh?'\n ")
+    print(
+        "'So your heading to the Pyramid' says the shopkeeper. "
+        "'In that case ")
+    print(
+        "only two things will be useful but you can only take one. "
+        "Do you want ")
+    print("the rope or the torch?'\n ")
 
     item_choice()
 
@@ -145,15 +151,29 @@ def game_main():
     """
     Function to start main game.
     """
-    print("You wake up before the sun ready for action, after gathering all your ")
-    print("you are ready to venture forth. You hail a taxi which brings you to ")
-    print("the desert, where two men dressed in white sand robes are waiting.\n ")
+    print(
+        "You wake up before the sun ready for action, after gathering all "
+        "your equipment "
+    )
+    print(
+        "you are ready to venture forth. You hail a taxi which brings you"
+        "to "
+    )
+    print(
+        "the desert, where two men dressed in white sand robes are waiting.\n"
+    )
 
-    print("You finally mount the bad-tempered camel and start the slow journey ")
-    print("to the Pyramid. You arrive just after midday as the heat of the sun ")
-    print("is starting to get unbearable. The guides lead to the entrance and ")
-    print("one of them wishes you luck, while the other warns that most who enter")
-    print("are never seen again.\n ")
+    print(
+        "You finally mount the bad-tempered camel and start the slow journey "
+    )
+    print(
+        "to the Pyramid. You arrive just after midday as the heat of the sun "
+    )
+    print(
+        "is starting to get unbearable. The guides lead to the entrance and "
+    )
+    print("one of them wishes you luck, while the other warns that most who ")
+    print("enter are never seen again.\n ")
 
     game_0()
 
@@ -216,7 +236,9 @@ def level_1():
     global ITEM
     while True:
         if ITEM is not None and ITEM == "rope":
-            direction1 = input("Use rope or go left or right [rope/left/right] ").lower()
+            direction1 = input(
+                "Use rope or go left or right [rope/left/right] "
+            ).lower()
             choices = ["rope", "left", "right"]
         else:
             direction1 = input("Go left or right [left/right] ").lower()
@@ -226,7 +248,10 @@ def level_1():
 
     if ITEM is not None and ITEM == "rope":
         clear()
-        print("You mange to loop the rope around the hook and pull yourself up!\n")
+        print(
+            "You mange to loop the rope around the hook and pull yourself"
+            "up!\n"
+        )
         game_1()
     elif direction1 == "left":
         clear()
@@ -286,11 +311,16 @@ def game_0():
     Function to call game_0
     """
     clear()
-    print("As you approach the entrance you hear voice inside your head. To open")
+    print(
+        "As you approach the entrance you hear voice inside your head. To"
+        "open"
+    )
     print("this door you must first answer this questions.\n ")
 
     while True:
-        entrance_q = input("What creature has a human head and body of a lion? ").lower()
+        entrance_q = input(
+            "What creature has a human head and body of a lion? "
+        ).lower()
         choices = ["sphinx"]
         if validate_choice(entrance_q, choices):
             clear()
@@ -322,7 +352,9 @@ def game_1():
         print(f"Mummy Score: {mummy_wins}")
 
         while player_hand not in hand:
-            player_hand = input("Choose a hand (rock, paper or scissors): ").lower()
+            player_hand = input(
+                "Choose a hand (rock, paper or scissors): "
+            ).lower()
 
         clear()
         print(f"You chose {player_hand}! ")
@@ -367,6 +399,6 @@ if __name__ == "__main__":
 
 # Game 1 - Rock, paper, scissors with MUMMY
 
-# Game 2 - Mutiple choice quiz to pass Jackal-headed guards
+# Game 2 - Multiple choice quiz to pass Jackal-headed guards
 
 # Game 3 - Noughts and crosses with Anubis
