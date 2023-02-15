@@ -62,9 +62,10 @@ def game_intro():
 
 title()
 
+global PLAYER
 while True:
-    player_name = input("What is your name? ").capitalize()
-    if player_name.isalpha():
+    PLAYER = input("What is your name? ").capitalize()
+    if PLAYER.isalpha():
         break
     else:
         print("Invalid: Enter a name containing letters only! ")
@@ -75,9 +76,10 @@ def enter_pyramid():
     """
     Function to start game or exit game.
     """
+    global PLAYER
     while True:
         clear()
-        start_game = input(f"Do wish to enter the Pyramid, {player_name}? [yes/no] ").lower()
+        start_game = input(f"Do wish to enter the Pyramid, {PLAYER}? [yes/no] ").lower()
         choices = ["yes", "no"]
         if validate_choice(start_game, choices):
             if start_game == "yes":
