@@ -110,18 +110,9 @@ Consider adding any helpful links or notes to help remind you in the future, if 
     - Any additional notes about this feature.
 
 ## Tools & Technologies Used
-
-In this section, you should explain the various tools and technologies used to develop the project.
-Make sure to put a link (where applicable) to the source, and explain what each was used for.
-Some examples have been provided, but this is just a sample only, your project might've used others.
-Feel free to delete any unused items below as necessary.
+Below are the technologies used to built this app. The main techcnology used was Python.
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
-- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
-- [CSS Flexbox](https://www.w3schools.com/css/css3_flexbox.asp) and/or [CSS Grid](https://www.w3schools.com/css/css_grid.asp) used for an enhanced responsive layout.
-- [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
-- [Materialize](https://materializecss.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
 - [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
@@ -129,24 +120,16 @@ Feel free to delete any unused items below as necessary.
 - [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder) used to help generate the Markdown files.
-- [Flask](https://flask.palletsprojects.com) used as the Python framework for the site.
-- [Django](https://www.djangoproject.com) used as the Python framework for the site.
-- [MongoDB](https://www.mongodb.com) used as the non-relational database management with Flask.
-- [SQLAlchemy](https://www.sqlalchemy.org) used as the relational database management with Flask.
-- [PostgreSQL](https://www.postgresql.org) used as the relational database management.
-- [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [Cloudinary](https://cloudinary.com) used for online static file storage.
-- [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
-- [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
+
 
 ## Data Model
 
 ### Flowchart
 
 To follow best practice, a flowchart was created for the app's logic,
-and mapped out before coding began using a free version of
-[Lucidchart](https://www.lucidchart.com/pages/ER-diagram-symbols-and-meaning) and/or [Draw.io](https://www.draw.io).
+and mapped out before coding, however some changes occured during development.
+[Draw.io](https://www.draw.io).
 
 Below is the flowchart of the main process of this Python program. It shows the entire cycle of the program.
 
@@ -185,13 +168,10 @@ The primary functions used on this application are:
 
 ### Imports
 
-I've used the following Python packages and/or external imported packages.
+The following external imported packages were used.
 
-- `gspread`: used with the Google Sheets API
-- `google.oauth2.service_account`: used for the Google Sheets API credentials
-- `time`: used for adding time delays
 - `os`: used for adding a `clear()` function
-- `colorama`: used for including color in the terminal
+- `sys`: used for creating `exit_game()` function
 - `random`: used to get a random choice from a list
 
 ## Testing
