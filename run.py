@@ -183,50 +183,59 @@ def item_choice():
                 break
 
 def level_1():
-
     """
     Function after correct answer is entered at entrance door
     """
+    global ITEM
     while True:
-        direction1 = input("Use rope or go left or right [rope/left/right] ").lower()
-        choices = ["rope", "left", "right"]
+        if ITEM is not None and ITEM == "rope":
+            direction1 = input("Use rope or go left or right [rope/left/right] ").lower()
+            choices = ["rope", "left", "right"]
+        else:
+            direction1 = input("Go left or right [left/right] ").lower()
+            choices = ["left", "right"]
         if validate_choice(direction1, choices):
-            if  ITEM == "rope":
-                print("You mange to loop the rope around the hook and pull yourself up! ")
-                game_1()
+            break
+
+    if ITEM is not None and ITEM == "rope":
+        clear()
+        print("You mange to loop the rope around the hook and pull yourself up!\n")
+        game_1()
+    elif direction1 == "left":
+        clear()
+        print("You walk down the left corrider getting a face full of acient")
+        print("cobwebs. After wiping your face you see human bones and skulls")
+        print("You reluctantly move forward, you put down your foot and hear")
+        print("a soft click. Bolts shoot out from the both sides.")
+        print("\nYou died!")
+        exit_game()
+    else:
+        clear()
+        print("You walk down the right corrider, it seems to clear.")
+        print("You continue on coming to another junction")
+        while True:
+            direction2 = input("Go left, right! [left/right] ").lower()
+            choices = ["left", "right"]
+            if validate_choice(direction2, choices):
                 break
-            elif direction1 == "left":
-                print("You walk down the left corrider getting a face full of acient")
-                print("cobwebs. After wiping your face you see human bones and skulls")
-                print("You reluctantly move forward, you put down your foot and hear")
-                print("a soft click. Bolts shoot out from the both sides.")
-                print("You died!")
-                entrance_open()
-                break
-            else:
-                print("You walk down the right corrider, it seems to clear.")
-                print("You continue on coming to another junction")
-                while True:
-                    direction2 = input("Go left, right! [left/right] ").lower()
-                    choices = ["left", "right"]
-                    if validate_choice(direction2, choices):
-                        if direction2 == "left":
-                            print("At the end of corrider there is a set of stairs which you")
-                            print("climb, bringing you up to the next floor.\n ")
-                            game_1()
-                            break
-                        else:
-                            print("You walk down the right corrider, which seems be getting")
-                            print("narrower and lower as you go. You eventually have to")
-                            print("continue on your hands and knee and then crawling on your")
-                            print("stomach. You see light on the end of the tunnel and press")
-                            print("on, however after a few minutes you realise you are stuck")
-                            print("just a few metres away from the exit. No amount of")
-                            print("seems to help. You start to scream for help but no one can")
-                            print("hear you!")
-                            print("You died!")
-                            entrance_open()
-                            break
+
+        if direction2 == "left":
+            clear()
+            print("At the end of corrider there is a set of stairs which you")
+            print("climb, bringing you up to the next floor.\n ")
+            game_1()
+        else:
+            clear()
+            print("You walk down the right corrider, which seems be getting")
+            print("narrower and lower as you go. You eventually have to")
+            print("continue on your hands and knee and then crawling on your")
+            print("stomach. You see light on the end of the tunnel and press")
+            print("on, however after a few minutes you realise you are stuck")
+            print("just a few metres away from the exit. No amount of")
+            print("seems to help. You start to scream for help but no one can")
+            print("hear you!")
+            print("\nYou died!")
+            exit_game()
 
 def entrance_open():
 
