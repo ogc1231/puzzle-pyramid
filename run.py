@@ -74,7 +74,9 @@ def player_name():
         if PLAYER.isalpha() and len(PLAYER) >= 2:
             break
         else:
-            print("Invalid: Enter a name containing letters only! ")
+            clear()
+            title()
+            print("Invalid: Enter a name containing at least 2 letters!")
             continue
 
 def enter_pyramid():
