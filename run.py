@@ -334,8 +334,8 @@ def game_1():
     Function to run first game: rock, paper, scissors.
     """
     print("You enter a lower chamber with a low ceiling. At the sound of your")
-    print("footsteps a MUMMY turns around grinning it's rotten teeth at you ")
-    print("MUMMY: Ah another victim, good as I was getting hungry. I will")
+    print("footsteps a Mummy turns around grinning it's rotten teeth at you ")
+    print("Mummy: Ah another victim, good as I was getting hungry. I will")
     print("however give you a chance, beat me at my favourite game and")
     print("will let you live, but if you lose you will never leave this room.")
     print("READY!\n ")
@@ -388,7 +388,7 @@ def game_1():
         clear()
         print(f"Your Score: {player_wins}")
         print(f"Mummy Score: {mummy_wins}")
-        input("proceed to next room/game")
+        input("You defeated the mummy!")
 
 
 if __name__ == "__main__":
