@@ -396,9 +396,3 @@ if __name__ == "__main__":
     title()
     player_name()
     enter_pyramid()
-
-# Game 1 - Rock, paper, scissors with MUMMY
-
-# Game 2 - Multiple choice quiz to pass Jackal-headed guards
-
-# Game 3 - Noughts and crosses with Anubis
