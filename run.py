@@ -228,7 +228,7 @@ def item_choice():
     """
     global ITEM
     while True:
-        ITEM = input("Choose one of the options: rope or torch ")
+        ITEM = input("Choose one of the options: [rope or torch] ")
         choices = ["rope", "torch"]
         if validate_choice(ITEM, choices):
             if ITEM == "rope":
