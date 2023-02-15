@@ -53,6 +53,11 @@ def title():
 
 # Game intro text
 def game_intro():
+
+    """
+    Function to call game intro text.
+    """
+    
     print("You finally arrive in Cairo, after hours of being cramped up in a")
     print("small taxi with four others, some of whom looked and smelled as if")
     print("they hadn't washed in weeks.\n ")
