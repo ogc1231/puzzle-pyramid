@@ -39,9 +39,11 @@ def validate_choice(user_input, choices):
 
 
 def title():
+
     """
      Prints Puzzle Pyramid ASCII text.
     """
+
     print("""
  _____               _        _____                           _     _ 
 |  __ \             | |      |  __ \                         (_)   | |
@@ -112,7 +114,7 @@ def enter_pyramid():
                 break
 
 
-def game_shop():----------------
+def game_shop():
 
     """
     Function to go to the shop in game.
@@ -128,7 +130,7 @@ def game_shop():----------------
         "The shop was jammed full of everything any "
         "type of adventurer could "
     )
-    print("dream of; ropes, torches, chisels, hammers and bizare knick-knacks. ")
+    print("dream of; ropes, torches, chisels, hammers and bizarre knick-knacks. ")
     print("After browsing you head over to the shopkeeper at the counter.\n ")
 
     print("'So your heading to the Pyramid' says the shopkeeper. 'In that case ")
@@ -144,7 +146,7 @@ def game_main():
     Function to start main game.
     """
     print("You wake up before the sun ready for action, after gathering all your ")
-    print("you are ready to ventrure forth. You hail a taxi which brings you to ")
+    print("you are ready to venture forth. You hail a taxi which brings you to ")
     print("the desert, where two men dressed in white sand robes are waiting.\n ")
 
     print("You finally mount the bad-tempered camel and start the slow journey ")
@@ -228,7 +230,7 @@ def level_1():
         game_1()
     elif direction1 == "left":
         clear()
-        print("You walk down the left corrider getting a face full of acient")
+        print("You walk down the left corridor getting a face full of ancient")
         print("cobwebs. After wiping your face you see human bones and skulls")
         print("You reluctantly move forward, you put down your foot and hear")
         print("a soft click. Bolts shoot out from the both sides.")
@@ -236,7 +238,7 @@ def level_1():
         exit_game()
     else:
         clear()
-        print("You walk down the right corrider, it seems to clear.")
+        print("You walk down the right corridor, it seems to clear.")
         print("You continue on coming to another junction")
         while True:
             direction2 = input("Go left, right! [left/right] ").lower()
@@ -246,12 +248,12 @@ def level_1():
 
         if direction2 == "left":
             clear()
-            print("At the end of corrider there is a set of stairs which you")
+            print("At the end of corridor there is a set of stairs which you")
             print("climb, bringing you up to the next floor.\n ")
             game_1()
         else:
             clear()
-            print("You walk down the right corrider, which seems be getting")
+            print("You walk down the right corridor, which seems be getting")
             print("narrower and lower as you go. You eventually have to")
             print("continue on your hands and knee and then crawling on your")
             print("stomach. You see light on the end of the tunnel and press")
@@ -302,9 +304,9 @@ def game_1():
     Function to run first game: rock, paper, scissors.
     """
     print("You enter a lower chamber with a low ceiling. At the sound of your")
-    print("footsteps a MUMMY turns arounding grinning it's rotten teeth at you ")
+    print("footsteps a MUMMY turns around grinning it's rotten teeth at you ")
     print("MUMMY: Ah another victim, good as I was getting hungry. I will")
-    print("however give you a chance, beat me at my favoutite game and")
+    print("however give you a chance, beat me at my favourite game and")
     print("will let you live, but if you lose you will never leave this room.")
     print("READY!\n ")
 
@@ -341,7 +343,7 @@ def game_1():
             player_wins += 1
             print("Mummy: How did you beat me!")
         else:
-            print("Mummy: Bahahaha! I won that round. Let's try another.\n")
+            print("Mummy: Bahahaha! I won that round.\n")
             mummy_wins += 1
 
     if mummy_wins == 3:
