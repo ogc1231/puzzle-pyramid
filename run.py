@@ -234,11 +234,13 @@ def entrance_open():
     Function after correct answer is entered
     """
     clear()
-    print("The doors open with a low rumble, throwning red dust into the air.")
+    print("The doors open with a low rumble, throwing red dust into the air.")
     print("You hesitantly walk ing, letting your eye adjust to the gloomy ")
-    print("light inside. You come to a juction with a path lead left and")
+    print("light inside. You come to a junction with a path lead left and")
     print("another leading to the right. There is also a high ledge with")
     print("a hook above it, maybe some sort of tool would be useful here?\n ")
+
+    level_1()
 
 
 def game_0():
