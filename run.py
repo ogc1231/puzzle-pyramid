@@ -20,7 +20,7 @@ def clear():
 def exit_game():
 
     """
-    Function exit game fully and not just current loop.
+    Function to exit game fully and not just current loop.
     """
     sys.exit()
 
@@ -126,7 +126,7 @@ def game_shop():
     print("as the last time you were in town.\n")
 
     print(
-        "The shop was jammed full of everything any "
+        "The shop is jammed full of everything any "
         "type of adventurer could "
     )
     print(
@@ -172,7 +172,7 @@ def game_main():
     print(
         "is starting to get unbearable. The guides lead to the entrance and "
     )
-    print("one of them wishes you luck, while the other warns that most who ")
+    print("one of them wishes you luck, while the other warns that all who ")
     print("enter are never seen again.\n ")
 
     game_0()
@@ -224,6 +224,7 @@ def item_choice():
 
 
 def level_1():
+
     """
     Function after correct answer is entered at entrance door
     """
@@ -277,8 +278,10 @@ def level_1():
             print("continue on your hands and knee and then crawling on your")
             print("stomach. You see light on the end of the tunnel and press")
             print("on, however after a few minutes you realise you are stuck")
-            print("just a few metres away from the exit. No amount of")
-            print("seems to help. You start to scream for help but no one can")
+            print(
+                "just a few metres away from the exit. No amount of squirming"
+            )
+            print("seems to help. You start to scream but no one can")
             print("hear you!")
             print("\nYou died!")
             exit_game()
@@ -291,10 +294,10 @@ def entrance_open():
     """
     clear()
     print("The doors open with a low rumble, throwing red dust into the air.")
-    print("You hesitantly walk ing, letting your eye adjust to the gloomy ")
-    print("light inside. You come to a junction with a path lead left and")
+    print("You hesitantly walk in, letting your eyes adjust to the gloomy")
+    print("light inside. You come to a junction with a path leading left and")
     print("another leading to the right. There is also a high ledge with")
-    print("a hook above it, maybe some sort of tool would be useful here?\n ")
+    print("a hook above it, maybe some sort of tool would be useful here?\n")
 
     level_1()
 
@@ -302,18 +305,18 @@ def entrance_open():
 def game_0():
 
     """
-    Function to call game_0
+    Function to call the first quiz questions to open entrance door.
     """
     clear()
     print(
-        "As you approach the entrance you hear voice inside your head. To"
+        "As you approach the entrance you hear a voice inside your head. To"
         "open"
     )
     print("this door you must first answer this questions.\n ")
 
     while True:
         entrance_q = input(
-            "What creature has a human head and body of a lion? "
+            "What mythical creature has a human head and the body of a lion? "
         ).lower()
         choices = ["sphinx"]
         if validate_choice(entrance_q, choices):
@@ -377,7 +380,7 @@ def level_2():
     print("As you approach the door you hear voice again.\n ")
     while True:
         door_q = input(
-            "Who is known the Egyptian Sun God? "
+            "Who is known as the Egyptian Sun God? "
         ).lower()
         choices = ["ra"]
         if validate_choice(door_q, choices):
@@ -392,9 +395,9 @@ def game_1():
     Function to run first game: rock, paper, scissors.
     """
     print("You enter a lower chamber with a low ceiling. At the sound of your")
-    print("footsteps a Mummy turns around grinning it's rotten teeth at you ")
+    print("footsteps a Mummy turns around grinning its rotten teeth at you. ")
     print("Mummy: Ah another victim, good as I was getting hungry. I will")
-    print("however give you a chance, beat me at my favourite game and")
+    print("however give you a chance, beat me at my favourite game and I")
     print("will let you live, but if you lose you will never leave this room.")
     print("READY!\n ")
 
@@ -404,7 +407,7 @@ def game_1():
 
     while mummy_wins < 3 and player_wins < 3:
         player_hand = None
-        mummy_hand = "rock"
+        mummy_hand = random.choice(hand)
 
         print(f"Your Score: {player_wins}")
         print(f"Mummy Score: {mummy_wins}")
