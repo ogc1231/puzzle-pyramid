@@ -108,7 +108,7 @@ def enter_pyramid():
                 game_intro()
                 break
             else:
-                print("Thanks for playing. Goodbye!")
+                print("\nThanks for playing. Goodbye!")
                 exit_game()
                 break
 
@@ -144,6 +144,28 @@ def game_shop():
     print("the rope or the torch?'\n ")
 
     item_choice()
+
+
+def game_0():
+
+    """
+    Function to call the first quiz questions to open entrance door.
+    """
+    print(
+        "As you approach the entrance you hear a voice inside your head. To "
+        "open"
+    )
+    print("this door you must first answer this questions.\n ")
+
+    while True:
+        entrance_q = input(
+            "What mythical creature has a human head and the body of a lion? "
+        ).lower()
+        choices = ["sphinx"]
+        if validate_choice(entrance_q, choices):
+            clear()
+            entrance_open()
+            break
 
 
 def game_main():
@@ -302,29 +324,6 @@ def entrance_open():
     level_1()
 
 
-def game_0():
-
-    """
-    Function to call the first quiz questions to open entrance door.
-    """
-    clear()
-    print(
-        "As you approach the entrance you hear a voice inside your head. To"
-        "open"
-    )
-    print("this door you must first answer this questions.\n ")
-
-    while True:
-        entrance_q = input(
-            "What mythical creature has a human head and the body of a lion? "
-        ).lower()
-        choices = ["sphinx"]
-        if validate_choice(entrance_q, choices):
-            clear()
-            entrance_open()
-            break
-
-
 def door_open():
 
     """
@@ -399,7 +398,7 @@ def game_1():
     print("Mummy: Ah another victim, good as I was getting hungry. I will")
     print("however give you a chance, beat me at my favourite game and I")
     print("will let you live, but if you lose you will never leave this room.")
-    print("READY!\n ")
+    print("\nREADY!\n ")
 
     hand = ("rock", "paper", "scissors")
     player_wins = 0
