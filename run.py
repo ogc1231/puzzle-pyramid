@@ -246,6 +246,7 @@ def game_0():
     """
     Function to call game_0
     """
+    clear()
     print("As you approach the entrance you hear voice inside your head. To open")
     print("this door you must first answer this questions.\n ")
 
@@ -253,10 +254,9 @@ def game_0():
         entrance_q = input("What creature has a human head and body of a lion? ").lower()
         choices = ["sphinx"]
         if validate_choice(entrance_q, choices):
-            if entrance_q == "sphinx":
-                clear()
-                entrance_open()
-                break
+            clear()
+            entrance_open()
+            break
 
 def game_1():
 
