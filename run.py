@@ -85,7 +85,9 @@ def enter_pyramid():
     global PLAYER
     while True:
         clear()
-        start_game = input(f"Do wish to enter the Pyramid, {PLAYER}? [yes/no] ").lower()
+        start_game = input(
+            f"Do wish to enter the Pyramid, {PLAYER}? [yes/no] "
+        ).lower()
         choices = ["yes", "no"]
         if validate_choice(start_game, choices):
             if start_game == "yes":
