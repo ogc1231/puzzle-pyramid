@@ -26,6 +26,10 @@ def exit_game():
 
 
 def validate_choice(user_input, choices):
+
+    """
+    Reusable function validate player inputs.
+    """
     try:
         if user_input not in choices:
             raise ValueError
@@ -75,7 +79,7 @@ def game_intro():
 def player_name():
 
     """
-    Function input player's name.
+    Function to validate input of player's name.
     """
 
     global PLAYER
@@ -149,7 +153,7 @@ def game_shop():
 def game_0():
 
     """
-    Function to call the first quiz questions to open entrance door.
+    Function to call the first quiz question to open entrance door.
     """
     print(
         "As you approach the entrance you hear a voice inside your head. To "
@@ -248,7 +252,7 @@ def item_choice():
 def level_1():
 
     """
-    Function after correct answer is entered at entrance door
+    Function to choose direction inside pyramid.
     """
     global ITEM
     while True:
@@ -312,7 +316,7 @@ def level_1():
 def entrance_open():
 
     """
-    Function after correct answer is entered
+    Function to enter pyramid after correct answer is entered at entrance door.
     """
     clear()
     print("The doors open with a low rumble, throwing red dust into the air.")

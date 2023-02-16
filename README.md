@@ -304,20 +304,57 @@ class Person:
 
 The primary functions used on this application are:
 
-- `get_sales_data()`
-    - Get sales figures input from the user.
-- `validate_data()`
-    - Converts all string values into integers.
-- `update_worksheet()`
-    - Update the relevant worksheet with the data provided.
-- `calculate_surplus_data()`
-    - Compare sales with stock and calculate the surplus for each item type.
-- `get_last_5_entries_sales()`
-    - Collects columns of data from sales worksheet.
-- `calculate_stock_data()`
-    -  Calculate the average stock for each item type, adding 10%.
-- `main()`
-    - Run all program functions.
+- `Clear()`
+    - Clear function to clean-up the terminal, to increase readability.
+
+- `exit_game()`
+    - Function to exit game fully and not just current loop.
+
+- `validate_choice(user_input, choices)`
+    - Reusable function validate player inputs.
+
+- `title()`
+    - Prints Puzzle Pyramid ASCII text.
+
+- `game_intro()`
+    - Function to call game intro text.
+
+- `player_name()`
+    -  Function to validate input of player's name.
+
+- `enter_pyramid()`
+    - Function to start game or exit game.
+
+- `game_shop()`
+    - Function to go to the shop in game.
+
+- `game_0()`
+    - Function to call the first quiz question to open entrance door.
+
+- `game_main()`
+    - Function to start main game.
+
+- `shopping()`
+    - Function to choose to go shopping or not.
+
+- `item_choice()`
+    - Function to choose ITEM from shop.
+
+- `level_1()`
+    - Function to choose direction inside pyramid.
+
+- `entrance_open`
+    - Function to enter pyramid after correct answer is entered at entrance door.
+
+- `door_open()`
+    - Function to call door_open after correctly answering second question.
+
+- `level_2()`
+    - Function to call level_2 after beating the Mummy.
+
+- `game_1`
+    - Function to run first game: rock, paper, scissors.
+
 
 ### Imports
 
@@ -423,9 +460,8 @@ Links to tools, media and tutorials that were used during this project or inspir
 | Source | Location | Notes |
 | --- | --- | --- |
 | [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
-| [YouTube](https://www.youtube.com/watch?v=fn68QNcatfo&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&index=29) | Rock, Paper, Scissors Game | Rock, Paper, Scissors tutorial in Python |
+| [YouTube](https://www.youtube.com/watch?v=fn68QNcatfo&list=PLZPZq0r_RZOOkUQbat8LyQii36cJf2SWT&index=29) | Code for Rock, Paper, Scissors Game | Rock, Paper, Scissors tutorial in Python |
 | [Asciiart](https://www.asciiart.eu/buildings-and-places/monuments/pyramids) | ASCII | Pyramid ASCII used in project|
-
 
 ### Media
 
