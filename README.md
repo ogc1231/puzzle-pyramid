@@ -128,7 +128,7 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/yes_rope.PNG)
 
-- **Inside Pyramid - No Rope**
+- **If Rope Not Choosen**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
@@ -169,6 +169,37 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/d2_left.PNG)
+
+- **Mummy Challenges You to Rock, Paper, Scissors**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/use_rope.PNG)
+
+- **Rock, Paper, Scissors - Mummy Wins Round**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/mummy_wins_round.PNG)
+
+- **Rock, Paper, Scissors - Player Wins Round**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/player_wins_round.PNG)
+
+- **Rock, Paper, Scissors - Mummy Wins Game**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/mummy_wins_game.PNG)
+
+- **Rock, Paper, Scissors - Player Wins Game**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/player_wins_game.PNG)
+
 
 
 
