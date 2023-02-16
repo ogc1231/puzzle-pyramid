@@ -2,10 +2,12 @@
 
 Return back to the [README.md](README.md) file.
 
-## Code Validation
-### Python
+Below is al the testing carries out on this application to find any bugs, errors or performance issues.
 
-The recommended [CI Python Linter](https://pep8ci.herokuapp.com) was used to validate the Python file.
+## Code Validation
+### Python Validator - PEP8
+
+The recommended [CI Python Linter](https://pep8ci.herokuapp.com) was used to validate the Python file, no errors were returned.
 
 | File | CI URL | Screenshot | Notes |
 | --- | --- | --- | --- |
@@ -137,6 +139,8 @@ Testing user stories with screenshots to show they have been fulfilled.
 
 ### Bug 1
 If the rope was chosen in the shop, when the player comes to the direction 1 choice, they will able to choose left, right or rope. However when you have the rope all of the options with use the rope even if you type in left or right. 
+
+Bug was discoverd during input & validation testing, so was not fixed.
 
 ## Cross Browser Testing
 
