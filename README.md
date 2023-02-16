@@ -10,23 +10,12 @@ Essentially, this part is your "sales pitch".
 
 ## User Stories
 
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
-- As a new site user, I would like to ____________, so that I can ____________.
+- As a user, I would like to , so that I can .
+- As a user, I would like to , so that I can .
+- As a user, I would like to , so that I can .
+- As a user, I would like to , so that I can .
+- As a user, I would like to , so that I can .
 
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-- As a returning site user, I would like to ____________, so that I can ____________.
-
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
-- As a site administrator, I should be able to ____________, so that I can ____________.
 
 ## Flowchart
 
@@ -243,34 +232,31 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/passage_enter.PNG)
 
 
-
-
-
-
-
 ### Future Features
 
-Do you have additional ideas that you'd like to include on your project in the future?
-Fantastic! List them here!
-It's always great to have plans for future improvements!
-Consider adding any helpful links or notes to help remind you in the future, if you revisit the project in a couple years.
+- Move Levels
+    - Add more levels to make a longer game
 
-- Cool new feature #1
+- More Items in Shop
     - Any additional notes about this feature.
-- Cool new feature #2
-    - Any additional notes about this feature.
-- Cool new feature #3
-    - Any additional notes about this feature.
+
+- More Bosses
+    - Add Anubis endgame boss and mini bosses
+
+- Checkpoints/Save Game feature
+    - So player can return later without losing progress
+
+- More Games and Puzzles
+    - Add mutiple choice qiuz game, riddles, Noughts & crosses game.
 
 ## Tools & Technologies Used
 Below are the technologies used to built this app. The main techcnology used was Python.
 
-- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
-- [JavaScript](https://www.javascript.com) used for user interaction on the site.
-- [Python](https://www.python.org) used as the back-end programming language.
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the favicon.
+- [JavaScript](https://www.javascript.com) The script used to run the ock terminal.
+- [Python](https://www.python.org) used as the main programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
 - [GitHub](https://github.com) used for secure online code storage.
-- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
 - [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
 - [Markdown Builder by Tim Nelson](https://traveltimn.github.io/markdown-builder) used to help generate the Markdown files.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
@@ -286,22 +272,17 @@ and mapped out before coding, however some changes occured during development.
 
 Below is the flowchart of the main process of this Python program. It shows the entire cycle of the program.
 
-![screenshot](documentation/flowchart.png)
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/flowchart/flowchart.png)
 
 ### Classes & Functions
 
-The program uses classes as a blueprint for the project's objects (OOP). This allows for the object to be reusable.
-
-```python
-class Person:
-    """ Insert docstring comments here """
-    def __init__(self, name, age, health, inventory):
-        self.name = name
-        self.age = age
-        self.health = health
-        self.inventory = inventory
-```
-
+- `if __name__ == "__main__":`
+    `clear()`
+    `title()`
+    `player_name()`
+    `enter_pyramid()`
+    - Used to ensure correct order of functions when called.
+    
 The primary functions used on this application are:
 
 - `Clear()`
