@@ -140,8 +140,38 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/yes_rope.PNG)
 
+- **Use Rope**
 
-s
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/use_rope.PNG)
+
+- **Direction 1 - Go Left**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/d1_left.PNG)
+
+- **Direction 1 - Go Right**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/d1_right.PNG)
+
+- **Direction 2 - Go Right**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/d2_right.PNG)
+
+- **Direction 2 - Go Left**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/d2_left.PNG)
+
+
+
 ### Future Features
 
 Do you have additional ideas that you'd like to include on your project in the future?
