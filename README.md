@@ -1,8 +1,10 @@
 # PUZZLE PYRAMID
-In this section, you will include a few paragraphs providing an overview of your project.
-Essentially, this part is your "sales pitch".
 
-[Live link](https://puzzle-pyramid.herokuapp.com/)
+Puzzle Pyramid is Python terminal adventure game, It follws the story of a person who arrives in Cario to explore a mysterious pyramid. The game contains storyline narrative, [Quiz](https://en.wikipedia.org/wiki/Quiz) questions and the game of [Rock, Paper, Scissors](https://en.wikipedia.org/wiki/Rock_paper_scissors). The game contains many oppurunities for the player enter inputs and make choices on what option they wuld like to choose or which direction to take.
+
+The game was made for those who enjoy the mythology of Ancient Eygpt, quiz questions based on the mythology of Ancient Eygpt, rock, paper, scissors and a story narrative. The contain has permadeath, so when you die you must restart from the beginning again.
+
+[Live Link - Puzzle Pyramid](https://puzzle-pyramid.herokuapp.com/)
 
 ![App preview](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/mockup.PNG)
 
