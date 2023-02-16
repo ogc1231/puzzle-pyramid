@@ -22,25 +22,20 @@ The game was made for those who enjoy the mythology of Ancient Egypt, quiz quest
 - As a user, I would like to a smooth, coherent story that makes sense and flows correctly.
 - As a user, I would like to get feedback if my inputs are incorrect, so that I know what is required to fulfil the validator.
 
-
 ## Flowchart
+
+This flowchart gives an overview of the multiple paths, inputs and decision that can be made throughout the game. A rough version was drawn up in the planning stage before any code was typed, however as the game developed the flowchart also changed and morphed as new ideas were added and others removed.
 
 ![Flowchart](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/flowchart/flowchart.png)
 
 ## Favicon
+
+The favicon used is a pyramid similar to those found it Egypt, it was chosen as it fits with the theme of the game.
 ![Favicon](https://github.com/ogc1231/puzzle-pyramid/blob/main/views/favicon/pyramid.png)
+
 ## Features
 
-In this section, you should go over the different parts of your project,
-and describe each in a sentence or so.
-
-You will need to explain what value each of the features provides for the user,
-focusing on who this website is for, what it is that they want to achieve,
-and how your project is the best way to help them achieve these things.
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-IMPORTANT: Remember to always include a screenshot of each individual feature!
+Below are the main features of the game with screenshots to give reference.
 
 ### Existing Features
 
@@ -256,6 +251,7 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
     - Add multiple choice quiz game, riddles, Noughts & crosses game.
 
 ## Tools & Technologies Used
+
 Below are the technologies used to built this app. The main technology used was Python.
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the favicon.
@@ -457,5 +453,6 @@ Links to tools, media and tutorials that were used during this project or inspir
 | [Icons8](https://icons8.com/icons/set/pyramid) | entire site | image | favicon on all pages |
 
 ### Acknowledgements
+
 I would like to thank my Code Institute mentor, [Tim Nelson](https://github.com/TravelTimN) for their support throughout the development of this project.
 
