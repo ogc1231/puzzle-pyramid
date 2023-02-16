@@ -2,7 +2,7 @@
 
 Return back to the [README.md](README.md) file.
 
-Below is al the testing carries out on this application to find any bugs, errors or performance issues.
+Below is all the testing carried out on this application to find any bugs, errors or performance issues.
 
 ## Code Validation
 ### Python Validator - PEP8
@@ -20,7 +20,7 @@ The recommended [CI Python Linter](https://pep8ci.herokuapp.com) was used to val
 
 ## Lighthouse Audit
 
-I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
+Deployed app was tested using the Lighthouse Audit tool to check for any major issues.
 
 | Page | Size | Screenshot | Notes |
 | --- | --- | --- | --- |
@@ -31,7 +31,7 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 ## Defensive Programming - Input Testing & Validation 
 
 
-Defensive programming was manually tested with the below user acceptance testing:
+Defensive programming - Input Testing & Validation was manually tested with the below user acceptance testing:
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
@@ -137,7 +137,7 @@ Testing user stories with screenshots to show they have been fulfilled.
 
 ## Bugs
 
-### Bug 1
+### Bug 1 - NOT fixed!
 If the rope was chosen in the shop, when the player comes to the direction 1 choice, they will able to choose left, right or rope. However when you have the rope all of the options with use the rope even if you type in left or right. 
 
 Bug was discoverd during input & validation testing, so was not fixed.
