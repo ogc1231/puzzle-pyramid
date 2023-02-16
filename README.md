@@ -40,7 +40,7 @@ Below are the main features of the game with screenshots to give reference.
 
 ### Existing Features
 
-- **Start Screen**
+- **Start Screen/Enter Name**
 
     - This is the screen that greets the player when the first run the game. It shows the PUZZLE Pyramid ASCII Art and asks the user to enter their name.
 
