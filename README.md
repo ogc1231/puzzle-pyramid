@@ -53,34 +53,95 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature01.png)
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/start_screen.PNG)
 
-- **Enter Name**
+- **After Entering Name**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature02.png)
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/after_entering_name.PNG)
 
 - **Invalid Name**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature03.png)
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/invalid_name.PNG)
 
 - **Enter the Pyramid - No**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature03.png)
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/enter_no.PNG)
 
 - **Enter the Pyramid - Yes**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
-![screenshot](documentation/feature03.png)
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/enter_yes.PNG)
+
+- **Arrive in Cario  - Story Intro**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/enter_yes.PNG)
+
+- **Go to Shop - No**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/go_to_shop_no.PNG)
+
+- **Go to Shop - Yes**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/go_to_shop_yes.PNG)
+
+- **Choose Rope**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/chose_rope.PNG)
+
+- **Choose Torch**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/chose_torch.PNG)
+
+- **Entrance Question**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/go_to_shop_no.PNG)
 
 
+- **Entrance Question - Wrong**
 
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/q1_wrong_answer.PNG)
+
+- **Entrance Question - Correct**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/yes_rope.PNG)
+
+- **Inside Pyramid - No Rope**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/no_rope.PNG)
+
+- **If Rope Choosen**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/yes_rope.PNG)
+
+
+s
 ### Future Features
 
 Do you have additional ideas that you'd like to include on your project in the future?
