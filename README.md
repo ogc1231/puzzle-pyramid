@@ -41,194 +41,194 @@ Below are the main features of the game with screenshots to give reference.
 
 - **Start Screen**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - This the screen that greets the player when the first run the game. It shows the PUZZLE Pyramid ASCII Art and asks the user to enter their name.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/start_screen.PNG)
 
 - **After Entering Name**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Player will be asked if they want to enter the pyramid or not.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/after_entering_name.PNG)
 
 - **Invalid Name**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If an invalid name is entered (letters only and must at least two characters long) player will asked to enter another name that is valid.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/invalid_name.PNG)
 
 - **Enter the Pyramid - No**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Player with be thanked for playing and program will exit.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/enter_no.PNG)
 
 - **Enter the Pyramid - Yes**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Player will brought to the game story intro.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/enter_yes.PNG)
 
 - **Arrive in Cairo  - Story Intro**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Story intro sets the setting and purpose of the story for the player.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/enter_yes.PNG)
 
 - **Go to Shop - No**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Player will be asked if they want to go to the shop, if no they will go straight to bed and journey to the pyramid will being.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/go_to_shop_no.PNG)
 
 - **Go to Shop - Yes**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Player heads to the in game shop. Player can choose between the rope or the torch to bring with them on their journey.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/go_to_shop_yes.PNG)
 
 - **Choose Rope**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Player chooses the rope.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/chose_rope.PNG)
 
 - **Choose Torch**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Player chooses the torch.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/chose_torch.PNG)
 
 - **Entrance Question**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Journey to pyramid and first quiz question to open main entrance doors. Questions asks player what mythical creature has the head of a human and the body of a lion.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/go_to_shop_no.PNG)
 
 
 - **Entrance Question - Wrong**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If wrong player will be told answer is in invalid and prompted to try again.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/q1_wrong_answer.PNG)
 
 - **Entrance Question - Correct**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If correct the doors will open and player enters the pyramid.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/yes_rope.PNG)
 
 - **If Rope Not Chosen**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If rope was NOT chosen player can choose to go left or right.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/no_rope.PNG)
 
 - **If Rope Chosen**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If rope was chosen player can choose to use the rope or go left or right.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/yes_rope.PNG)
 
 - **Use Rope**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If rope is used player skips to Rock, Paper, Scissors game with the Mummy.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/use_rope.PNG)
 
 - **Direction 1 - Go Left**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Player goes left and dies. Game exits.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/d1_left.PNG)
 
 - **Direction 1 - Go Right**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Player goes right and reaches another junction and choice to go left or right.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/d1_right.PNG)
 
 - **Direction 2 - Go Right**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Player goes right and dies. Game exits.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/d2_right.PNG)
 
 - **Direction 2 - Go Left**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Player goes left, goes up the starts and reaches Rock, Paper, Scissors game with the Mummy. 
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/d2_left.PNG)
 
 - **Mummy Challenges You to Rock, Paper, Scissors**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Player plays Rock, Paper, Scissors game with the Mummy.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/use_rope.PNG)
 
 - **Rock, Paper, Scissors - Mummy Wins Round**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If Mummy wins a round: "Bahahaha! I won that round."
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/mummy_wins_round.PNG)
 
 - **Rock, Paper, Scissors - Player Wins Round**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If player wins a round: rock - Mummy: "You're better than you look!", paper - Mummy "How did you beat me!" scissors - Mummy: "Arrhh, not possible". 
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/player_wins_round.PNG)
 
 - **Rock, Paper, Scissors - Round Tie**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If player and Mummy tie a hand: Mummy: "It's a tie, again human!".
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/round_tie.PNG)
 
 - **Rock, Paper, Scissors - Mummy Wins Game**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If Mummy wins three rounds first: Mummy "You're Mine! Bahahaha!". Player dies. Game Exits.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/mummy_wins_game.PNG)
 
 - **Rock, Paper, Scissors - Player Wins Game**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Player defeats the Mummy by winning three rounds first, player heads to next door.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/player_wins_game.PNG)
 
 - **Post Mummy Door Question**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Second door asks player who is the Egyptian Sun God.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/player_wins_game.PNG)
 
 - **Post Mummy Door Question - Wrong**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - If wrong player will be told answer is in invalid and prompted to try again.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/q1_wrong_answer.PNG)
 
 - **Post Mummy Door Question - Correct No Torch**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Doors open, however only darkness lays ahead, if player does NOT have the torch all they can do is enter.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/q2_correct_answer.PNG)
 
 - **Post Mummy Door Question - Correct with Torch**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Doors open, however only darkness lays ahead, if player does have the torch all they can do is use the torch.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/yes_torch.PNG)
 
 - **Use Torch**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - Player uses torch which illuminates the path ahead. Thanks for playing. Game Exits.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/use_torch.PNG)
 
 - **Enter Passage - No Torch**
 
-    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+    - The player enters the dark passage blindly. Thanks for playing. Game Exits.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/passage_enter.PNG)
 
