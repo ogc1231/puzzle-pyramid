@@ -10,11 +10,15 @@ Essentially, this part is your "sales pitch".
 
 ## User Stories
 
-- As a user, I would like to , so that I can .
-- As a user, I would like to , so that I can .
-- As a user, I would like to , so that I can .
-- As a user, I would like to , so that I can .
-- As a user, I would like to , so that I can .
+- As a user, I would like to input my own name, so that I can have a more personalised experience.
+- As a user, I would like to experience an intertesting narrative, so that I can become immersed in the story.
+- As a user, I would like to answer acient Eygptian based questions, so that I can have fun while testing my knowledge.
+- As a user, I would like to play game against interesring enemies, so that I can have fun and learn about the lore of the game universe.
+- As a user, I would like to make meaningful choices, so that I can reply the game mutiple times to experience all the paths.
+- As a user, I would like to choose items, so that I explore mutiple routes through the story.
+- As a user, I would like to know the score during rock, paper, scissors so that I know if I am winning or losing.
+- As a user, I would like to a smooth, coherent story that makes sense and flows correctly.
+- As a user, I would like to get feedback if my inputs are incorrect, so that I know what is required to fulfuil the validator.
 
 
 ## Flowchart
