@@ -26,7 +26,7 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | run.py | Mobile | ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/lighthouse_mobile.PNG) | Performance 88 |
 
 
-## Defensive Programming
+## Defensive Programming - Input Testing & Validation 
 
 
 Defensive programming was manually tested with the below user acceptance testing:
