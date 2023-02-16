@@ -17,25 +17,13 @@ You are not required to validate external libraries/frameworks, such as imported
 
 ### Python
 
-I have used the recommended [CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
+The recommended [CI Python Linter](https://pep8ci.herokuapp.com) was used to validate the Python file.
 
-The CI Python Linter can be used two different ways.
-- Copy/Paste your Python code directly into the linter.
-- As an API, using the "raw" URL appended to the linter URL.
-    - To find the "raw" URL, navigate to your file directly on the GitHub repo.
-    - On that page, GitHub provides a button on the right called "Raw" that you can click on.
-    - From that new page, copy the full URL, and paste it after the CI Python Linter URL (with a `/` separator).
-    - Examples:
+![Screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/mockup.PNG)
 
     | File | CI URL | Raw URL | Combined |
     | --- | --- | --- | --- |
     | PP3 *run.py* file | `https://pep8ci.herokuapp.com/` | `https://raw.githubusercontent.com/ogc1231/puzzle-pyramid/main/run.py` | https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/puzzle-pyramid/main/run.py |
-    | Boutique Ado *settings.py* | `https://pep8ci.herokuapp.com/` | `https://raw.githubusercontent.com/ogc1231/puzzle-pyramid/main/boutique_ado/settings.py` | https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/ogc1231/puzzle-pyramid/main/boutique_ado/settings.py |
-
-It's recommended to validate each file using the API URL.
-This will give you a custom URL which you can use on your testing documentation.
-It makes it easier to return back to a file to validate it again in the future.
-Use the steps above to generate your own custom URLs for each Python file.
 
 **IMPORTANT**: Django settings.py
 
