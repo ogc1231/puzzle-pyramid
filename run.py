@@ -442,7 +442,7 @@ def game_1():
         clear()
         print(f"Your Score: {player_wins}")
         print(f"Mummy Score: {mummy_wins}")
-        print("\nYour Mine! Bahahaha!")
+        print("\nYou're Mine! Bahahaha!")
         print("\nUnfortunately the mummy beat you. Game Over!")
         exit_game()
     elif player_wins == 3:
