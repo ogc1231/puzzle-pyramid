@@ -60,7 +60,6 @@ def title():
     """)  # noqa
 
 
-# Game intro text
 def game_intro():
 
     """
@@ -458,6 +457,7 @@ def game_1():
         level_2()
 
 
+# Ensure functions load in the correct order.
 if __name__ == "__main__":
     clear()
     title()
