@@ -31,6 +31,7 @@ This flowchart gives an overview of the multiple paths, inputs and decision that
 ## Favicon
 
 The favicon used is a pyramid similar to those found it Egypt, it was chosen as it fits with the theme of the game.
+
 ![Favicon](https://github.com/ogc1231/puzzle-pyramid/blob/main/views/favicon/pyramid.png)
 
 ## Features
@@ -41,7 +42,7 @@ Below are the main features of the game with screenshots to give reference.
 
 - **Start Screen**
 
-    - This the screen that greets the player when the first run the game. It shows the PUZZLE Pyramid ASCII Art and asks the user to enter their name.
+    - This is the screen that greets the player when the first run the game. It shows the PUZZLE Pyramid ASCII Art and asks the user to enter their name.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/start_screen.PNG)
 
@@ -101,7 +102,7 @@ Below are the main features of the game with screenshots to give reference.
 
 - **Entrance Question**
 
-    - Journey to pyramid and first quiz question to open main entrance doors. Questions asks player what mythical creature has the head of a human and the body of a lion.
+    - Journey to pyramid and answer first quiz question to open main entrance doors. Question asks player what mythical creature has the head of a human and the body of a lion.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/go_to_shop_no.PNG)
 
@@ -126,7 +127,7 @@ Below are the main features of the game with screenshots to give reference.
 
 - **If Rope Chosen**
 
-    - If rope was chosen player can choose to use the rope or go left or right.
+    - If rope was chosen player can choose to use the rope or go left or right. - Unfixed Bug see TESTING.md
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/yes_rope.PNG)
 
@@ -174,7 +175,10 @@ Below are the main features of the game with screenshots to give reference.
 
 - **Rock, Paper, Scissors - Player Wins Round**
 
-    - If player wins a round: rock - Mummy: "You're better than you look!", paper - Mummy "How did you beat me!" scissors - Mummy: "Arrhh, not possible". 
+    - If player wins a round: 
+    - rock - Mummy: "You're better than you look!"
+    - paper - Mummy "How did you beat me!" 
+    - scissors - Mummy: "Arrhh, not possible"
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/player_wins_round.PNG)
 
@@ -204,7 +208,7 @@ Below are the main features of the game with screenshots to give reference.
 
 - **Post Mummy Door Question - Wrong**
 
-    - If wrong player will be told answer is in invalid and prompted to try again.
+    - If answer is wrong player will be told answer is in invalid and prompted to try again.
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/q1_wrong_answer.PNG)
 
@@ -239,10 +243,10 @@ Below are the main features of the game with screenshots to give reference.
     - Add more levels to make a longer game
 
 - More Items in Shop
-    - Any additional notes about this feature.
+    - Add items in shop to used in the pyramid
 
 - More Bosses
-    - Add Anubis endgame boss and mini bosses
+    - Add Anubis endgame boss and more mini bosses
 
 - Checkpoints/Save Game feature
     - So player can return later without losing progress
@@ -278,12 +282,14 @@ Below is the flowchart of the main process of this Python program. It shows the 
 
 ### Classes & Functions
 
+Used to ensure correct order of functions when called.
+
 - `if __name__ == "__main__":`
     `clear()`
     `title()`
     `player_name()`
     `enter_pyramid()`
-    - Used to ensure correct order of functions when called.
+    
     
 The primary functions used on this application are:
 
