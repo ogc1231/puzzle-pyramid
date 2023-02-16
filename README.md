@@ -6,7 +6,7 @@ Essentially, this part is your "sales pitch".
 
 ![App preview](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/mockup.PNG)
 
-## UX
+## UX & Design
 
 ## User Stories
 
@@ -28,6 +28,12 @@ Essentially, this part is your "sales pitch".
 - As a site administrator, I should be able to ____________, so that I can ____________.
 - As a site administrator, I should be able to ____________, so that I can ____________.
 
+## Flowchart
+
+![Flowchart](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/flowchart/flowchart.png)
+
+## Favicon
+![Favicon](https://github.com/ogc1231/puzzle-pyramid/blob/main/views/favicon/pyramid.png)
 ## Features
 
 In this section, you should go over the different parts of your project,
@@ -43,27 +49,37 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ### Existing Features
 
-- **Feature #1**
+- **Start Screen**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature01.png)
 
-- **Feature #2**
+- **Enter Name**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature02.png)
 
-- **Feature #3**
+- **Invalid Name**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](documentation/feature03.png)
 
-Repeat as necessary for as many features as your site contains.
+- **Enter the Pyramid - No**
 
-Hint: the more, the merrier!
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/feature03.png)
+
+- **Enter the Pyramid - Yes**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](documentation/feature03.png)
+
+
 
 ### Future Features
 
