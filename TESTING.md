@@ -2,7 +2,6 @@
 
 Return back to the [README.md](README.md) file.
 
-
 ## Code Validation
 ### Python
 
@@ -34,45 +33,107 @@ Defensive programming was manually tested with the below user acceptance testing
 
 | Page | User Action | Expected Result | Pass/Fail | Comments |
 | --- | --- | --- | --- | --- |
-| Home Page | | | | |
-| | Click on Logo | Redirection to Home page | Pass | |
-| | Click on Home link in navbar | Redirection to Home page | Pass | |
-| Gallery Page | | | | |
-| | Click on Gallery link in navbar | Redirection to Gallery page | Pass | |
-| | Load gallery images | All images load as expected | Pass | |
-| Contact Page | | | | |
-| | Click on Contact link in navbar | Redirection to Contact page | Pass | |
-| | Enter first/last name | Field will accept freeform text | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message in textarea | Field will accept freeform text | Pass | |
-| | Click the Submit button | Redirects user to form-dump | Pass | User must click 'Back' button to return |
-| Sign Up | | | | |
-| | Click on Sign Up button | Redirection to Sign Up page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password (twice) | Field will only accept password format | Pass | |
-| | Click on Sign Up button | Asks user to confirm email page | Pass | Email sent to user |
-| | Confirm email | Redirects user to blank Sign In page | Pass | |
-| Log In | | | | |
-| | Click on the Login link | Redirection to Login page | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter valid password | Field will only accept password format | Pass | |
-| | Click Login button | Redirects user to home page | Pass | |
-| Log Out | | | | |
-| | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
-| | Click Confirm Logout button | Redirects user to home page | Pass | |
-| Profile | | | | |
-| | Click on Profile button | User will be redirected to the Profile page | Pass | |
-| | Click on the Edit button | User will be redirected to the edit profile page | Pass | |
-| | Click on the My Orders link | User will be redirected to the My Orders page | Pass | |
-| | Brute forcing the URL to get to another user's profile | User should be given an error | Pass | Redirects user back to own profile |
+| Enter Name | | | | |
+| | Input: "a" | Invalid: Enter a name containing at least 2 letters!, enter name | Pass | As expected |
+| | Input: "1" | Invalid: Enter a name containing at least 2 letters!, enter name | Pass | As expected |
+| | Input: "sam" | Moves onto - Do you wish to enter the pyramid and capitalises | Pass | As expected |
+| | Input: "pizza" | Moves onto - Do you wish to enter the pyramid and capitalises | Pass | As expected |
+| | Input: "12223" | Invalid: Enter a name containing at least 2 letters!, enter name | Pass | As expected |
+
+| Enter the Pyramid? | | | | |
+| | Input: "Yes" | Moves onto - Go shopping?| Pass | As expected |
+| | Input: "No" | Thanks for playing!, Game Exits | Pass | As expected |
+| | Input: "yeah" | Not valid enter to try again | Pass | As expected |
+| | Input: "pizza" | Not valid enter to try again | Pass | As expected |
+| | Input: "1" | Not valid enter to try again | Pass | As expected |
+
+| Go shopping? | | | | |
+| | Input: "yes" | Moves onto - Choose rope or torch | Pass | As expected |
+| | Input: "No" | Moves onto - Entrance question | Pass | As expected |
+| | Input: "yeah" | Not valid enter to try again | Pass | As expected |
+| | Input: "pizza" | Not valid enter to try again | Pass | As expected |
+| | Input: "1" | Not valid enter to try again | Pass | As expected |
+
+| Rope or Torch? | | | | |
+| | Input: "torch" | Rope is chosen, Moves onto - Entrance question | Pass | As expected |
+| | Input: "rope" | Torch is chosen, Moves onto - Entrance question | Pass | As expected |
+| | Input: "Yes" | Not valid enter to try again | Pass | As expected |
+| | Input: "No" | Not valid enter to try again | Pass | As expected |
+| | Input: "yeah" | Not valid enter to try again | Pass | As expected |
+| | Input: "pizza" | Not valid enter to try again | Pass | As expected |
+| | Input: "1" | Not valid enter to try again | Pass | As expected |
+
+| Entrance Question | | | | |
+| | Input: "sphinx" | Entrance opens move direction1 choice | Pass | As expected |
+| | Input: "No" | Not valid enter to try again | Pass | As expected |
+| | Input: "yeah" | Not valid enter to try again | Pass | As expected |
+| | Input: "pizza" | Not valid enter to try again | Pass | As expected |
+| | Input: "1" | Not valid enter to try again | Pass | As expected |
+
+| Direction 1 Choice - rope chosen | | | | |
+| | Input: "rope" | If rope was chosen, use rope and move onto RPS with Mummy | Pass | As expected |
+| | Input: "left" | If rope was chosen, uses rope and move onto RPS with Mummy | Fail | Not as expected |
+| | Input: "right" | If rope was chosen, uses rope and move onto RPS with Mummy | Fail | Not as expected |
+| | Input: "pizza" | Not valid enter to try again | Pass | As expected |
+| | Input: "1" | Not valid enter to try again | Pass | As expected |
+
+| Direction 1 Choice - rope NOT chosen | | | | |
+| | Input: "left" | Go left and die, game exits | Pass | As expected |
+| | Input: "right" | Go right and move onto direction 2 choice | Pass | As expected |
+| | Input: "rope" | Not valid enter to try again | Pass | As expected |
+| | Input: "pizza" | Not valid enter to try again | Pass | As expected |
+| | Input: "1" | Not valid enter to try again | Pass | As expected |
+
+| Direction 2 Choice | | | | |
+| | Input: "left" | Go left and move onto RPS with Mummy | Pass | As expected |
+| | Input: "right" | Go right and die, game exits | Pass | As expected |
+| | Input: "rope" | Not valid enter to try again | Pass | As expected |
+| | Input: "pizza" | Not valid enter to try again | Pass | As expected |
+| | Input: "1" | Not valid enter to try again | Pass | As expected |
+
+| Direction 2 Choice | | | | |
+| | Input: "left" | Go left and move onto RPS with Mummy | Pass | As expected |
+| | Input: "right" | Go right and die, game exits | Pass | As expected |
+| | Input: "rope" | Not valid enter to try again | Pass | As expected |
+| | Input: "pizza" | Not valid enter to try again | Pass | As expected |
+| | Input: "1" | Not valid enter to try again | Pass | As expected |
+
+| Rock, Paper, Scissors | | | | |
+| | Input: "rock" | Player uses rock | Pass | As expected |
+| | Input: "paper" | Player uses paper | Pass | As expected |
+| | Input: "scissors" | Player uses scissors | Pass | As expected |
+| | Input: "pizza" | Not valid, chose a hand Rock, Paper or Scissors | Pass | As expected |
+| | Input: "1" | Not valid, chose a hand Rock, Paper or Scissors  | Pass | As expected |
+
+| Post Mummy Door Question | | | | |
+| | Input: "ra" | Entrance opens move direction1 choice | Pass | As expected |
+| | Input: "RA" | Entrance opens move direction1 choice | Pass | As expected |
+| | Input: "sphinx" | Not valid enter to try again | Pass | As expected |
+| | Input: "No" | Not valid enter to try again | Pass | As expected |
+| | Input: "yeah" | Not valid enter to try again | Pass | As expected |
+| | Input: "pizza" | Not valid enter to try again | Pass | As expected |
+| | Input: "1" | Not valid enter to try again | Pass | As expected |
+
+| Dark Passage, torch NOT chosen | | | | |
+| | Input: "enter" | Player enters dark passage, thanks for playing, exits game | Pass | As expected |
+| | Input: "torch" | Not valid enter to try again  | Pass | As expected |
+| | Input: "scissors" | Not valid enter to try again  | Pass | As expected |
+| | Input: "pizza" | Not valid enter to try again  | Pass | As expected |
+| | Input: "1" | Not valid enter to try again  | Pass | As expected |
+
+| Dark Passage, torch chosen | | | | |
+| | Input: "torch" | Player turns on torch illuminating the passage, thanks for playing, exits game | Pass | As expected |
+| | Input: "enter" | Not valid enter to try again  | Pass | As expected |
+| | Input: "scissors" | Not valid enter to try again  | Pass | As expected |
+| | Input: "pizza" | Not valid enter to try again  | Pass | As expected |
+| | Input: "1" | Not valid enter to try again  | Pass | As expected |
 
 Repeat for all other tests, as applicable to your own site.
 The aforementioned tests are just an example of a few different project scenarios.
 
 ## User Story Testing
 
-Testing user stories is actually quite simple, once you've already got the stories defined on your README.
-
+Testing user stories with screenshots to show they have been fulfilled.
 
 | User Story | Screenshot |
 | --- | --- |
@@ -89,7 +150,8 @@ Testing user stories is actually quite simple, once you've already got the stori
 
 ## Bugs
 
-There are no known bugs have been found in this app, however this doesn't mean that there are none and some may appear in the future.
+### Bug 1
+If the rope was chosen in the shop, when the player comes to the direction 1 choice, they will able to choose left, right or rope. However when you have the rope all of the options with use the rope even if you type in left or right. 
 
 ## Cross Browser Testing
 
