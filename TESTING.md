@@ -14,7 +14,7 @@ The recommended [CI Python Linter](https://pep8ci.herokuapp.com) was used to val
 ### NOQA
 
 `noqa` = **NO Quality Assurance**
-- was used for the Puzzle Pyramid ASCII Art to remove errors.
+- Noqa was used for the Puzzle Pyramid ASCII Art to remove errors.
 
 ## Lighthouse Audit
 
@@ -39,21 +39,18 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Input: "sam" | Moves onto - Do you wish to enter the pyramid and capitalises | Pass | As expected |
 | | Input: "pizza" | Moves onto - Do you wish to enter the pyramid and capitalises | Pass | As expected |
 | | Input: "12223" | Invalid: Enter a name containing at least 2 letters!, enter name | Pass | As expected |
-
 | Enter the Pyramid? | | | | |
 | | Input: "Yes" | Moves onto - Go shopping?| Pass | As expected |
 | | Input: "No" | Thanks for playing!, Game Exits | Pass | As expected |
 | | Input: "yeah" | Not valid enter to try again | Pass | As expected |
 | | Input: "pizza" | Not valid enter to try again | Pass | As expected |
 | | Input: "1" | Not valid enter to try again | Pass | As expected |
-
 | Go shopping? | | | | |
 | | Input: "yes" | Moves onto - Choose rope or torch | Pass | As expected |
 | | Input: "No" | Moves onto - Entrance question | Pass | As expected |
 | | Input: "yeah" | Not valid enter to try again | Pass | As expected |
 | | Input: "pizza" | Not valid enter to try again | Pass | As expected |
 | | Input: "1" | Not valid enter to try again | Pass | As expected |
-
 | Rope or Torch? | | | | |
 | | Input: "torch" | Rope is chosen, Moves onto - Entrance question | Pass | As expected |
 | | Input: "rope" | Torch is chosen, Moves onto - Entrance question | Pass | As expected |
@@ -62,49 +59,42 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Input: "yeah" | Not valid enter to try again | Pass | As expected |
 | | Input: "pizza" | Not valid enter to try again | Pass | As expected |
 | | Input: "1" | Not valid enter to try again | Pass | As expected |
-
 | Entrance Question | | | | |
 | | Input: "sphinx" | Entrance opens move direction1 choice | Pass | As expected |
 | | Input: "No" | Not valid enter to try again | Pass | As expected |
 | | Input: "yeah" | Not valid enter to try again | Pass | As expected |
 | | Input: "pizza" | Not valid enter to try again | Pass | As expected |
 | | Input: "1" | Not valid enter to try again | Pass | As expected |
-
 | Direction 1 Choice - rope chosen | | | | |
 | | Input: "rope" | If rope was chosen, use rope and move onto RPS with Mummy | Pass | As expected |
 | | Input: "left" | If rope was chosen, uses rope and move onto RPS with Mummy | Fail | Not as expected |
 | | Input: "right" | If rope was chosen, uses rope and move onto RPS with Mummy | Fail | Not as expected |
 | | Input: "pizza" | Not valid enter to try again | Pass | As expected |
 | | Input: "1" | Not valid enter to try again | Pass | As expected |
-
 | Direction 1 Choice - rope NOT chosen | | | | |
 | | Input: "left" | Go left and die, game exits | Pass | As expected |
 | | Input: "right" | Go right and move onto direction 2 choice | Pass | As expected |
 | | Input: "rope" | Not valid enter to try again | Pass | As expected |
 | | Input: "pizza" | Not valid enter to try again | Pass | As expected |
 | | Input: "1" | Not valid enter to try again | Pass | As expected |
-
 | Direction 2 Choice | | | | |
 | | Input: "left" | Go left and move onto RPS with Mummy | Pass | As expected |
 | | Input: "right" | Go right and die, game exits | Pass | As expected |
 | | Input: "rope" | Not valid enter to try again | Pass | As expected |
 | | Input: "pizza" | Not valid enter to try again | Pass | As expected |
 | | Input: "1" | Not valid enter to try again | Pass | As expected |
-
 | Direction 2 Choice | | | | |
 | | Input: "left" | Go left and move onto RPS with Mummy | Pass | As expected |
 | | Input: "right" | Go right and die, game exits | Pass | As expected |
 | | Input: "rope" | Not valid enter to try again | Pass | As expected |
 | | Input: "pizza" | Not valid enter to try again | Pass | As expected |
 | | Input: "1" | Not valid enter to try again | Pass | As expected |
-
 | Rock, Paper, Scissors | | | | |
 | | Input: "rock" | Player uses rock | Pass | As expected |
 | | Input: "paper" | Player uses paper | Pass | As expected |
 | | Input: "scissors" | Player uses scissors | Pass | As expected |
 | | Input: "pizza" | Not valid, chose a hand Rock, Paper or Scissors | Pass | As expected |
 | | Input: "1" | Not valid, chose a hand Rock, Paper or Scissors  | Pass | As expected |
-
 | Post Mummy Door Question | | | | |
 | | Input: "ra" | Entrance opens move direction1 choice | Pass | As expected |
 | | Input: "RA" | Entrance opens move direction1 choice | Pass | As expected |
@@ -113,23 +103,18 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Input: "yeah" | Not valid enter to try again | Pass | As expected |
 | | Input: "pizza" | Not valid enter to try again | Pass | As expected |
 | | Input: "1" | Not valid enter to try again | Pass | As expected |
-
 | Dark Passage, torch NOT chosen | | | | |
 | | Input: "enter" | Player enters dark passage, thanks for playing, exits game | Pass | As expected |
 | | Input: "torch" | Not valid enter to try again  | Pass | As expected |
 | | Input: "scissors" | Not valid enter to try again  | Pass | As expected |
 | | Input: "pizza" | Not valid enter to try again  | Pass | As expected |
 | | Input: "1" | Not valid enter to try again  | Pass | As expected |
-
 | Dark Passage, torch chosen | | | | |
 | | Input: "torch" | Player turns on torch illuminating the passage, thanks for playing, exits game | Pass | As expected |
 | | Input: "enter" | Not valid enter to try again  | Pass | As expected |
 | | Input: "scissors" | Not valid enter to try again  | Pass | As expected |
 | | Input: "pizza" | Not valid enter to try again  | Pass | As expected |
 | | Input: "1" | Not valid enter to try again  | Pass | As expected |
-
-Repeat for all other tests, as applicable to your own site.
-The aforementioned tests are just an example of a few different project scenarios.
 
 ## User Story Testing
 
