@@ -188,6 +188,12 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/player_wins_round.PNG)
 
+- **Rock, Paper, Scissors - Round Tie**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/round_tie.PNG)
+
 - **Rock, Paper, Scissors - Mummy Wins Game**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
@@ -199,6 +205,45 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/player_wins_game.PNG)
+
+- **Post Mummy Door Question**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/player_wins_game.PNG)
+
+- **Post Mummy Door Question - Wrong**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/q1_wrong_answer.PNG)
+
+- **Post Mummy Door Question - Correct No Torch**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/q2_correct_answer.PNG)
+
+- **Post Mummy Door Question - Correct with Torch**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/yes_torch.PNG)
+
+- **Use Torch**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/use_torch.PNG)
+
+- **Enter Passage - No Torch**
+
+    - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
+
+![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/passage_enter.PNG)
+
+
+
 
 
 
