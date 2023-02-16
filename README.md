@@ -1,8 +1,8 @@
 # PUZZLE PYRAMID
 
-Puzzle Pyramid is Python terminal adventure game, It follws the story of a person who arrives in Cario to explore a mysterious pyramid. The game contains storyline narrative, [Quiz](https://en.wikipedia.org/wiki/Quiz) questions and the game of [Rock, Paper, Scissors](https://en.wikipedia.org/wiki/Rock_paper_scissors). The game contains many oppurunities for the player enter inputs and make choices on what option they wuld like to choose or which direction to take.
+Puzzle Pyramid is Python terminal adventure game, It follows the story of a person who arrives in Cairo to explore a mysterious pyramid. The game contains storyline narrative, [Quiz](https://en.wikipedia.org/wiki/Quiz) questions and the game of [Rock, Paper, Scissors](https://en.wikipedia.org/wiki/Rock_paper_scissors). The game contains many opportunities for the player enter inputs and make choices on what option they would like to choose or which direction to take.
 
-The game was made for those who enjoy the mythology of Ancient Eygpt, quiz questions based on the mythology of Ancient Eygpt, rock, paper, scissors and a story narrative. The contain has permadeath, so when you die you must restart from the beginning again.
+The game was made for those who enjoy the mythology of Ancient Egypt, quiz questions based on the mythology of Ancient Egypt, rock, paper, scissors and a story narrative. The contain has permadeath, so when you die you must restart from the beginning again.
 
 [Live Link - Puzzle Pyramid](https://puzzle-pyramid.herokuapp.com/)
 
@@ -13,14 +13,14 @@ The game was made for those who enjoy the mythology of Ancient Eygpt, quiz quest
 ## User Stories
 
 - As a user, I would like to input my own name, so that I can have a more personalised experience.
-- As a user, I would like to experience an intertesting narrative, so that I can become immersed in the story.
-- As a user, I would like to answer acient Eygptian based questions, so that I can have fun while testing my knowledge.
-- As a user, I would like to play game against interesring enemies, so that I can have fun and learn about the lore of the game universe.
-- As a user, I would like to make meaningful choices, so that I can reply the game mutiple times to experience all the paths.
-- As a user, I would like to choose items, so that I explore mutiple routes through the story.
+- As a user, I would like to experience an interesting narrative, so that I can become immersed in the story.
+- As a user, I would like to answer ancient Egyptian based questions, so that I can have fun while testing my knowledge.
+- As a user, I would like to play game against interesting enemies, so that I can have fun and learn about the lore of the game universe.
+- As a user, I would like to make meaningful choices, so that I can reply the game multiple times to experience all the paths.
+- As a user, I would like to choose items, so that I explore multiple routes through the story.
 - As a user, I would like to know the score during rock, paper, scissors so that I know if I am winning or losing.
 - As a user, I would like to a smooth, coherent story that makes sense and flows correctly.
-- As a user, I would like to get feedback if my inputs are incorrect, so that I know what is required to fulfuil the validator.
+- As a user, I would like to get feedback if my inputs are incorrect, so that I know what is required to fulfil the validator.
 
 
 ## Flowchart
@@ -74,7 +74,7 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/enter_yes.PNG)
 
-- **Arrive in Cario  - Story Intro**
+- **Arrive in Cairo  - Story Intro**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
@@ -123,13 +123,13 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/yes_rope.PNG)
 
-- **If Rope Not Choosen**
+- **If Rope Not Chosen**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
 ![screenshot](https://github.com/ogc1231/puzzle-pyramid/blob/main/documentation/testing/no_rope.PNG)
 
-- **If Rope Choosen**
+- **If Rope Chosen**
 
     - Details about this particular feature, including the value to the site, and benefit for the user. Be as detailed as possible!
 
@@ -253,10 +253,10 @@ IMPORTANT: Remember to always include a screenshot of each individual feature!
     - So player can return later without losing progress
 
 - More Games and Puzzles
-    - Add mutiple choice qiuz game, riddles, Noughts & crosses game.
+    - Add multiple choice quiz game, riddles, Noughts & crosses game.
 
 ## Tools & Technologies Used
-Below are the technologies used to built this app. The main techcnology used was Python.
+Below are the technologies used to built this app. The main technology used was Python.
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the favicon.
 - [JavaScript](https://www.javascript.com) The script used to run the ock terminal.
@@ -273,7 +273,7 @@ Below are the technologies used to built this app. The main techcnology used was
 ### Flowchart
 
 To follow best practice, a flowchart was created for the app's logic,
-and mapped out before coding, however some changes occured during development.
+and mapped out before coding, however some changes occurred during development.
 [Draw.io](https://www.draw.io).
 
 Below is the flowchart of the main process of this Python program. It shows the entire cycle of the program.
